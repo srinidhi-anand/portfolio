@@ -9,7 +9,7 @@ export async function POST(request) {
     console.log('api triggered with formdata', formData);
     try {
 
-        const sendStatus = emailService(formData);
+        const sendStatus = await emailService(formData);
         if (!sendStatus){
             return NextResponse.json({ status: sendStatus, message: "Failed: email was not sent" })
         }

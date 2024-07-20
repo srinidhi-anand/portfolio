@@ -2,13 +2,13 @@ import nodemailer from 'nodemailer';
 
 require('dotenv').config();
 
-export default function emailService(data) {
+export default async function emailService(data) {
     console.log('mail service started');
     const formData = {};
     Object.values(Array.from(data)).forEach(([key, value]) => {
         formData[`${key}`] = value;
     });
-    console.log('Inside email', formData);
+    console.log(process.env.MY_EMAIL, 'Inside email', formData);
     const transporter = nodemailer.createTransport({
         // host: "live.smtp.mailtrap.io",
         // port: 587,
@@ -40,7 +40,7 @@ export default function emailService(data) {
     //     pass: "b2a95f3944b8b06608a138c16af4c19d"
     //   }
     // });
-
+    console.log('created nodemailer service');
     // Configure the mailoptions object
     const mailOptions = {
         from: formData.email,
@@ -53,25 +53,26 @@ export default function emailService(data) {
         //     importance: "high"
         // }
     };
-
-    transporter.verify(function (error, success) {
-        if (error) {
-            console.log('Connection error:', error);
-            return false;
-        } else {
-            console.log('Server is ready to take our messages', success);
-            // Send the email
-            transporter.sendMail(mailOptions, function (error, info) {
-                if (error) {
-                    console.log('Error:', error);
-                    return false
-                } else {
-                    console.log('Email sent: ' + info.response);
-                    return true
-                }
-            });
-
-        }
+    console.log('mail options for nodemailer service');
+    await new Promise((resolve, reject) => {
+        transporter.verify(function (error, success) {
+            if (error) {
+                console.log('Connection error:', error);
+                return resolve(false);
+            } else {
+                console.log('Server is ready to take our messages', success);
+                // Send the email
+                transporter.sendMail(mailOptions, function (error, info) {
+                    if (error) {
+                        console.log('Error:', error);
+                        return resolve(false)
+                    } else {
+                        console.log('Email sent: ' + info.response);
+                        return resolve(true)
+                    }
+                });
+            }
+        });
     });
 
 }
