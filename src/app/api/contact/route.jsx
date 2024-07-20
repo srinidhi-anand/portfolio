@@ -5,9 +5,7 @@ const nodemailer = require('nodemailer');
 // Handles POST requests to /api
 
 export async function POST(request) {
-    console.log('request receieved');
-    const formData = await request.formData()
-    console.log(formData);
+    const formData = await request.formData();
     try {
 
         const sendStatus = emailService(formData);

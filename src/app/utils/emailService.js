@@ -3,17 +3,11 @@ import nodemailer from 'nodemailer';
 require('dotenv').config();
 
 export default function emailService(data) {
-    console.log('formData >> ', data);
-    console.log( process.env.MY_EMAIL);
-    console.log( process.env.MY_PASSWORD);
+    console.log('mail service started');
     const formData = {};
     Object.values(Array.from(data)).forEach(([key, value]) => {
         formData[`${key}`] = value;
-    })
-    console.log( formData.email);
-    console.log( formData.mobile);
-    console.log( formData.projectDetails);
-    console.log( formData.name);
+    });
     const transporter = nodemailer.createTransport({
         // host: "live.smtp.mailtrap.io",
         // port: 587,

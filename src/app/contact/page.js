@@ -49,7 +49,6 @@ export default function Contact() {
         } else if (formData.mobile.length < 10 || formData.mobile.length > 10) {
             errors.mobile = 'Mobile Number must be valid.';
         }
-        console.log(formData.mobile, formData.mobile.length)
         setErrors(errors);
         setIsFormValid(Object.keys(errors).length === 0);
     };
@@ -71,7 +70,6 @@ export default function Contact() {
     const handleInput = (e) => {
         const fieldName = e.target.name;
         const fieldValue = e.target.value;
-        console.log(fieldName, fieldValue);
         setFormData((prevState) => ({
             ...prevState,
             [fieldName]: fieldValue
@@ -90,12 +88,10 @@ export default function Contact() {
             Object.entries(formData).forEach(([key, value]) => {
                 data.append(key, value);
             })
-            console.log(formData, 'mail data', data);
             const response = await fetch('/api/contact', {
                 method: 'post',
                 body: data,
             });
-            console.log('mail response', response);
             if (response.status === 200) setFormSuccess(response.status);
             else {
                 setFormSuccess(false);
