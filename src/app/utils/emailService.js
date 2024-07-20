@@ -8,6 +8,7 @@ export default function emailService(data) {
     Object.values(Array.from(data)).forEach(([key, value]) => {
         formData[`${key}`] = value;
     });
+    console.log('Inside email', formData);
     const transporter = nodemailer.createTransport({
         // host: "live.smtp.mailtrap.io",
         // port: 587,

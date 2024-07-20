@@ -88,11 +88,15 @@ export default function Contact() {
             Object.entries(formData).forEach(([key, value]) => {
                 data.append(key, value);
             })
+            console.log('form Data framed', data);
             const response = await fetch('/api/contact', {
                 method: 'post',
                 body: data,
             });
-            if (response.status === 200) setFormSuccess(response.status);
+            console.log(response);
+            if (response.status === 200) {
+                setFormSuccess(response.status);
+            }
             else {
                 setFormSuccess(false);
             }
