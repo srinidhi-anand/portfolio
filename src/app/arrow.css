@@ -1,0 +1,19 @@
+.back-to-top-fixed-with-panel .icon{
+    text-align: -webkit-center;
+}
+
+.back-to-top-fixed {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 60px;
+    display: block;
+    height: 40px;
+    width: 40px;
+    bottom: 40px;
+    right: 40px;
+    position: fixed;
+    z-index: 3;
+}
+
+.back-to-top-fixed {
+    z-index: 4 !important;
+}

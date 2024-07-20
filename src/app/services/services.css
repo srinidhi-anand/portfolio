@@ -1,0 +1,38 @@
+.project-module-text {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.standard-modules .modules .text {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: 100%;
+}
+.project-module {
+    clear: both;
+    word-break: break-word;
+    position: relative;
+    width: 100%;
+}
+.texteditor-inline {
+    font-size: 14px;
+    color: black;
+    padding-left: 3%;
+    font-family: georgia, serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+.text-align {
+    text-align: left;
+}
+.service {
+    padding-left: 1.5%;
+}

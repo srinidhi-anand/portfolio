@@ -1,0 +1,18 @@
+.text-align-right {
+    text-align: right;
+    padding-right: 0.5%;
+}
+.text-align-left {
+    text-align: left;
+    padding-left: 0.5%;
+}
+.texteditor {
+    font-size: 14px;
+    color: black;
+    font-family: georgia, serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}

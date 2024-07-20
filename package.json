@@ -10,11 +10,24 @@
   },
   "dependencies": {
     "@nextui-org/button": "^2.0.34",
+    "@types/nodemailer": "^6.4.15",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "child_process": "^1.0.2",
+    "dgram": "^1.0.1",
+    "dns": "^0.2.2",
+    "dotenv": "^16.4.5",
+    "fs": "^0.0.1-security",
+    "fs-extra": "^11.2.0",
+    "net": "^1.0.2",
     "next": "14.2.4",
     "next-share": "^0.27.0",
+    "nodemailer": "^6.9.14",
     "react": "^18",
     "react-dom": "^18",
-    "react-social-icons": "^6.16.0"
+    "react-hook-form": "^7.52.0",
+    "react-social-icons": "^6.16.0",
+    "tls": "^0.0.1"
   },
   "devDependencies": {
     "eslint": "^8",

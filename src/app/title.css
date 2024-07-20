@@ -1,0 +1,66 @@
+.page-container {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-bottom: 0px;
+    padding-top: 70px;
+    width: 100%;
+}
+.page {
+    margin-left: 0%;
+    margin-right: 0%;
+    width: 100%;
+}
+.page-header {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3px;
+    padding-top: 22px;
+    max-width: 620px;
+    width: 100%;
+}
+.page-header .title {
+    color: rgb(51, 51, 51);
+    font-family: georgia, serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    padding-bottom: 20px;
+    padding-top: 0px;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+}
+.page-header .title, .page-header .description, .page-header .date, .page-header .custom1, .page-header .custom2 {
+    margin: 30px auto;
+}
+.preserve-whitespace {
+    white-space: pre-wrap;
+}
+
+.page-header .description {
+    color: rgb(136, 136, 136);
+    font-family: georgia, serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-top: 0px;
+    text-align: center;
+    text-transform: none;
+    width: 100%;
+    white-space: pre-line;
+    word-wrap: break-word;
+}
+.page-header .title, .page-header .description, .page-header .date, .page-header .custom1, .page-header .custom2 {
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+}
