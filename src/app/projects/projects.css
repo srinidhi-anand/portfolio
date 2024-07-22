@@ -12,9 +12,9 @@
     left: 0;
     right: 0;
     background: rgba(36, 62, 206, 0.6);
-    color: #fff;
+    color: black;
     visibility: hidden;
-    opacity: 0;
+    opacity: 1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,7 +36,7 @@
 .img__wrap:hover .img__description {
     transform: translateY(0);
     font-size: 40px;
-    color: black;
+    color: #ffffff;
     font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 100%;
     text-align: center;

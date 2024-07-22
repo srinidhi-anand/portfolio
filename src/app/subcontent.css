@@ -1,0 +1,10 @@
+.font-set {
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 200%;
+    justify-content: space-around;
+}
+
+.subtitle-font {
+    font-size: 30px !important;
+}

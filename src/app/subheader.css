@@ -1,0 +1,16 @@
+.sub-heading {
+    font-size: x-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    gap: 16px;
+    font-weight: 300;
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
+}
+
+.back-btn {
+    padding-left: 65%;
+}
