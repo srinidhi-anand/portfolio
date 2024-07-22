@@ -36,8 +36,8 @@ export default async function Subcontent(props) {
                     <div className="mt-5 pt-8 pl-8 pr-8 pb-2">
                         {descriptions.map((item, index) => (
                             <div key={index} className="w-full font-set">
-                                <ul>
-                                    <li> {item}</li>
+                                <ul key={`ul_${index}`}>
+                                    <li key={`li_${index}`}> {item}</li>
                                 </ul>
                             </div>
                         ))}
