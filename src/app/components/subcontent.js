@@ -34,8 +34,8 @@ export default async function Subcontent(props) {
             <SplitPane split="vertical" minSize={50} defaultSize={100}>
                 {/* <Pane initialSize="75%" minSize="10%" maxSize="500px"> */}
                     <div className="mt-5 pt-8 pl-8 pr-8 pb-2">
-                        {descriptions.map((item) => (
-                            <div className="w-full font-set">
+                        {descriptions.map((item, index) => (
+                            <div key={index} className="w-full font-set">
                                 <ul>
                                     <li> {item}</li>
                                 </ul>
