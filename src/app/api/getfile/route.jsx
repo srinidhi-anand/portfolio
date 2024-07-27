@@ -1,30 +1,29 @@
 import * as fs from 'fs';
+import * as path from 'path';
 import { NextResponse } from 'next/server';
 
-// Handles GET requests to /api
+export async function GET(request) {
+    const name = request.nextUrl.searchParams.get("name");
 
-export async function POST(request) {
-    const pattern = await request.body;
-    console.log('api triggered with pattern', pattern);
+    console.log('api triggered with pattern', name);
     try {
-
-        const directoryPath = path.join(__dirname, "../../../../public/");
+        const directoryPath = path.join(__dirname, "../../../../../public/");
         const fileNames = [];
         const files = fs.readdirSync(directoryPath);
         files.forEach(function (file) {
-            if (file.startsWith(pattern)) {
+            if (file.startsWith(name)) {
                 fileNames.push(file);
             }
         });
 
-        console.log("fileNames", fileNames);
+        // console.log("fileNames", fileNames);
         if (!fileNames) {
-            return NextResponse.json({ status: 404, message: "Failed: no files found" })
+            return NextResponse.json({ status: 404, fileNames: [], message: "Failed: no files found" })
         }
-        return NextResponse.json({ status: 200, message: "Success: Files found" })
+        return NextResponse.json({ status: 200, fileNames, message: "Success: Files found" })
 
     } catch (error) {
-        console.log(error)
-        NextResponse.status(500).json({ status: 400, message: "COULD NOT FETCH FILES" })
+        // console.log(error)
+        NextResponse.status(500).json({ status: 400, fileNames: [], message: "COULD NOT FETCH FILES" })
     }
 }
