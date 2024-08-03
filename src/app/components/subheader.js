@@ -12,13 +12,13 @@ export default function SubHeader() {
 
     return (
         <>
-        <div className="w-full pl-28 flex flex-row">
-             <div className="w-1/6"><Image
-                src='/logo.jpeg'
-                alt='logo'
-                width='50'
-                height='50'
-            /></div>
+            <div className="w-full pl-28 flex flex-row">
+                <div className="w-1/6"><Image
+                    src='/logo.jpeg'
+                    alt='logo'
+                    width='50'
+                    height='50'
+                /></div>
                 <div className="w-full content-center text-right back-btn"><ul className="sub-heading title preserve-whitespace e2e-site-logo-text flex flex-row">
                     <li>
                         <Link href="/projects" className={`btn link ${pathname === '/' ? 'active' : ''}`}>Back To Projects</Link>
@@ -27,8 +27,8 @@ export default function SubHeader() {
                         <Link href="/" className={`btn link ${pathname === '/' ? 'active' : ''}`}>Main Page</Link>
                     </li>
                 </ul></div>
-        </div>
-           
+            </div>
+
         </>
     )
 };

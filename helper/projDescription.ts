@@ -10,7 +10,7 @@ export const works = {
     "Digital Cash": {
         "stack": "Ionic Framework + Angular JS + Node.js + MongoDB",
         "text": "As a full stack development, worked mainly in developing an E-Invoice page for the digital money transfer application.Worked on the backend development to calculate commissions and e-invoices related to bill payments via REST API Calls.Worked on the deployment on AWS and handled database records as a cloud service.App supported in both Arabic and English Languages.It can be available in web platform, IOS and Android Platforms",
-        "url": "digi_",
+        "url": "dmoney_",
         "extension": ['png'],
         "image_count": 1
     },
