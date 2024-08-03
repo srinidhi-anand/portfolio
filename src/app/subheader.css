@@ -6,14 +6,14 @@
 }
 
 .btn.link {
-    background-color: rgb(130, 131, 209);
-    color: white;
+    background-color: rgb(130, 131, 209) !important;
+    color: white  !important;
 }
 
 .btn.link:hover {
     cursor: pointer;
-    background-color: rgb(158, 176, 209);
-    color: blue;
+    background-color: rgb(158, 176, 209) !important;
+    color: blue !important;
 }
 
 .back-btn {
