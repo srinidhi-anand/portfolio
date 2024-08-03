@@ -20,7 +20,7 @@ export default function About() {
                 <div className="project-module mt-8 flex flex-row">
                 <div className="align w-1/4">
                 <Image
-                    src='/profile.jpeg'
+                    src='/Profile.jpeg'
                     alt='logo'
                     width='200'
                     height='200'
@@ -35,7 +35,7 @@ export default function About() {
                     width='200'
                     height='200'
                 /></div>
-                <div className="w-3/4 break-word flex flex-col">
+                <div className="w-3/4 break-word flex flex-col texteditor-inline">
                 <div className="float-left sub-title">Qualification</div>
                 <div  className="w-full span">
                     <span className="w-full mt-2">M.E (Applied Electronics)</span><br/>

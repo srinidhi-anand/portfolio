@@ -1,7 +1,8 @@
 .project-module-text {
     padding-top: 5px;
     padding-bottom: 0px;
-    width: 100%;
+    padding-left: 5%;
+    width: 96%;
 }
 
 .standard-modules .modules .text {
@@ -35,4 +36,7 @@
 }
 .service {
     padding-left: 1.5%;
+    width:96%;
+    word-wrap: break-word;
+    text-align: justify;
 }

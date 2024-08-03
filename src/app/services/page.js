@@ -16,19 +16,20 @@ export default function About() {
 
     return (
         <>
-        <Header />
-        <Title name="Services" />
-        <div className="standard-modules modules text project-module-text">
-        { skills.split(';').map((i) => 
-            <div key = "i" className="text-align">
-                <span key = "i" className="texteditor-inline">
-                <i class="bi bi-airplane-engines-fill"></i><span key = "i" className=" service texteditor-inline">{i.trim()}</span>
-                </span>
+            <Header />
+            <Title name="Services" />
+            <div className="standard-modules modules text project-module-text">
+                {skills.split(';').map((i) =>
+                    <div key="i" className="text-align">
+                        <span key="i" className="texteditor-inline flex flex-row">
+                            <i class="bi bi-airplane-engines-fill"></i>
+                            <div key="i" className=" service texteditor-inline">{i.trim()}</div>
+                        </span>
+                    </div>
+                )}
             </div>
-        )}
-        </div>
-        <BackToTop></BackToTop>
-        <Footer />
+            <BackToTop></BackToTop>
+            <Footer />
         </>
     )
 }
