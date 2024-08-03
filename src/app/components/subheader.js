@@ -21,10 +21,10 @@ export default function SubHeader() {
             /></div>
                 <div className="w-full content-center text-right back-btn"><ul className="sub-heading title preserve-whitespace e2e-site-logo-text flex flex-row">
                     <li>
-                        <Link href="/projects" className={`link ${pathname === '/' ? 'active' : ''}`}>Back To Projects</Link>
+                        <Link href="/projects" className={`btn link ${pathname === '/' ? 'active' : ''}`}>Back To Projects</Link>
                     </li>
                     <li>
-                        <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}>Main Page</Link>
+                        <Link href="/" className={`btn link ${pathname === '/' ? 'active' : ''}`}>Main Page</Link>
                     </li>
                 </ul></div>
         </div>

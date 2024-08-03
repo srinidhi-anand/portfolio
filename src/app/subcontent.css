@@ -65,3 +65,8 @@
 .Resizer.disabled:hover {
     border-color: transparent;
 }
+
+.row {
+    height: 100%;
+    padding-left: 5%;
+}

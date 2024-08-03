@@ -14,7 +14,7 @@ export default function Project1(props) {
     return (
         <>
             <SubHeader />
-            <Title name={`${title}`} />
+            <Title name={`${title}`} IsDetails={true} />
             <Subcontent title={`${title}`} />
             <BackToTop />
         </>

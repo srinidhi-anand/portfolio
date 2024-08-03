@@ -41,7 +41,7 @@ export const works = {
 
     "Razor Blade": {
         "stack": "Javascript + IPython + Postman + Swagger + MSSQL + SAP CPQ + SAP CRM + GitHub + JIRA.",
-        "text": "worked in e-commerce website development and data management CPQ functionalities for variant multi-parent child system configurations of products.Involved in the generation of quotes, and contracts related to Agilent products & services via integration with CRM and CPQ.Worked on the yearly pricing of materials using Restful calls for VC products.Leading the team members in customized web development application.",
+        "text": "Worked in e-commerce website development and data management CPQ functionalities for variant multi-parent child system configurations of products.Involved in the generation of quotes, and contracts related to Agilent products & services via integration with CRM and CPQ.Worked on the yearly pricing of materials using Restful calls for VC products.Leading the team members in customized web development application.",
         "url": "pps_",
         "extension": ['png'],
         "image_count": 1
