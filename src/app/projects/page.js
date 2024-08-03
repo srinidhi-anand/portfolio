@@ -44,10 +44,10 @@ export default function Projects() {
                         <Link
                             key={`link_${media.id + 1}`}
                             href={{
-                                pathname: `/projects/${media.id}`,
-                                query: { name: media.title },
+                                pathname: `/projects/details`,
+                                query: { name: media.title, id: media.id },
                               }}
-                            className={`img__img link ${pathname === `/projects/${media.id}` ? 'active' : ''}`}
+                            className={`img__img link ${pathname === `/projects/details` ? 'active' : ''}`}
                         >
                             <div key={`desc_${media.id + 1}`} className="img__description_layer">
                                 <p key={`title_${media.id + 1}`} className="img__description">{media.title}</p>

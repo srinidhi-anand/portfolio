@@ -7,7 +7,7 @@ export const metadata = {
   title: "Portfolio",
   description: "Portfolio generated using next.js",
 };
-
+console.warn = () => {}
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
