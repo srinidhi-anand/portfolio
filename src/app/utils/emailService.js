@@ -24,22 +24,6 @@ export default async function emailService(data) {
         }
       });
 
-    // var transport = nodemailer.createTransport({
-    //     host: "live.smtp.mailtrap.io",
-    //     port: 587,
-    //     auth: {
-    //       user: "api",
-    //       pass: "a75b162c07c743f2cc13b70693f76f6e"
-    //     }
-    //   });
-    // var transport = nodemailer.createTransport({
-    //   host: "live.smtp.mailtrap.io",
-    //   port: 587,
-    //   auth: {
-    //     user: "api",
-    //     pass: "b2a95f3944b8b06608a138c16af4c19d"
-    //   }
-    // });
     console.log('created nodemailer service');
     // Configure the mailoptions object
     const mailOptions = {
@@ -47,11 +31,6 @@ export default async function emailService(data) {
         to: 'srinidhianand4@gmail.com',
         subject: `Mail from ${formData.name} - Freelance project`,
         html: `<h1>Welcome</h1><br/> <h2>Hey Sri, you got a new freelance Call!</h2><br/> <h4><b>Project Details: </b></h4><br/> <h4>${formData.projectDetails}</h4><p>${formData.message}</p><br/><p>Contact Details: ${formData.mobile ? formData.mobile : 'No mobile Number'}</p><br/><br/><br/><br/><br/><br/><br/>`,
-        // headers: {
-        //     "x-priority": "1",
-        //     "x-msmail-priority": "High",
-        //     importance: "high"
-        // }
     };
     console.log('mail options for nodemailer service');
     await new Promise((resolve, reject) => {
