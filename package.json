@@ -31,10 +31,13 @@
     "react": "^18",
     "react-dom": "^18",
     "react-hook-form": "^7.52.0",
+    "react-icon": "^1.0.0",
+    "react-icons": "^5.2.1",
     "react-social-icons": "^6.16.0",
     "react-split-pane": "^2.0.3",
     "react-split-pane-next": "^1.0.6",
-    "tls": "^0.0.1"
+    "tls": "^0.0.1",
+    "tw-elements": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^8",

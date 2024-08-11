@@ -11,7 +11,6 @@ import BackToTop from "../components/backtotop";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
-import { useState } from "react";
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Projects() {
@@ -31,7 +30,7 @@ export default function Projects() {
     return (
         <>
             <Header />
-            <Title name="Projects" />
+            <Title name="Projects" description='Click the work to know more.' cls="projectclass" />
 
             <div className='gallery'>
                 {media_urls.map((media) => (

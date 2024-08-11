@@ -68,3 +68,11 @@ p {
 .padding-50{
     padding-top: 40px;
 }
+
+.projectclass {
+    color: blue !important;
+    font-size: 13px !important;
+    font-family: georgia !important;
+    padding: 0px !important;
+    font-style: italic !important;
+}

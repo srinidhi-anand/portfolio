@@ -36,4 +36,5 @@ html {
   font: 14px / 19px "adobe-clean", "Adobe Clean", sans-serif;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }

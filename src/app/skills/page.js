@@ -18,7 +18,7 @@ export default function About() {
 
     const skillLabels = 'Languages ;Expert Tech Stacks;Python Frameworks;Frontend Tool ;Backend Tools ;React JS Tools; Databases;Project Management Tools;Version Control System ;Amazon Web Services ;Software Design Patterns;Web Services;IDE ;Operating Systems';
 
-    const skillValues = 'Python, R, React JS, JavaScript, Angular JS;Node JS, Typescript, Python;Kivy, Django;Ionic;Postman, Swagger;Material UI, TailWind UI, React Bootstrap, Axios;MSSQL, MySql, PostgreSQL, snowflake, MongoDB;JIRA; GitHub, Bit bucket, Git;AWS S3 , RDB;MVC, Agile SDLC methodology;Rest API;Visual Studio Code, Sublime, PyCharm;Windows 10, Mac, Ubuntu'.split(";");
+    const skillValues = 'Python, R, React JS, JavaScript, Next.js, Angular JS; Next.js, Node.js, Typescript, Python;Kivy, Django;Ionic;Postman, Swagger;Material UI, TailWind UI, React Bootstrap, Axios;MSSQL, MySql, PostgreSQL, snowflake, MongoDB;JIRA; GitHub, Bit bucket, Git;AWS S3 , RDB;MVC, Agile SDLC methodology;Rest API;Visual Studio Code, Sublime, PyCharm;Windows 10, Mac, Ubuntu'.split(";");
 
     return (
         <>
