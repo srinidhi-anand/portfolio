@@ -20,6 +20,7 @@
     "@mui/styled-engine-sc": "^6.0.0-alpha.18",
     "@nextui-org/button": "^2.0.34",
     "@types/nodemailer": "^6.4.15",
+    "@vercel/toolbar": "^0.1.16",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
     "child_process": "^1.0.2",

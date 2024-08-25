@@ -1,7 +1,14 @@
-module.exports = {
+
+const withVercelToolbar = require('@vercel/toolbar/plugins/next')({
+    devServerPort: 3000,
+    enableInProduction: true,
+  });
+const nextConfig = {
     images: {
         domains: ['res.cloudinary.com']
     },
+    // basePath: '/github-pages',
+    // assetPrefix: '/github-pages',
     // future: {
     //     webpack4: true, // by default, if you customize webpack config, they switch back to version 4. 
     //     // Looks like backward compatibility approach.
@@ -19,3 +26,5 @@ module.exports = {
         return config;
     },
 };
+
+module.exports = withVercelToolbar(nextConfig);
