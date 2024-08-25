@@ -10,7 +10,7 @@
     "export": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "gh-pages -d build"
+    "deploy": "portfolio-feat -d build"
   },
   "dependencies": {
     "@emotion/react": "^11.13.0",
