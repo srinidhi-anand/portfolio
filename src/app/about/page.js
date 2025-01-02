@@ -52,7 +52,7 @@ export default function About() {
                     alt='logo'
                     width='35'
                     height='35'
-                /><a className= "ml-3" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Uy2vTLb-yMe3ZTxcX0fzLrX4MNdaVUdk/view?usp=sharing"><u>Resume</u></a></div></div>
+                /><a className= "ml-3" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1Ssscietd1OigzHg4JLg3seExwNbtcijk/view?usp=sharing"><u>Resume</u></a></div></div>
                 </div>
             </div>
         </div>
