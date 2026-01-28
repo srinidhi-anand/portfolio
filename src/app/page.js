@@ -10,18 +10,18 @@ export default function Home() {
     <div className='welcome container'>
       <main className="flex min-h-screen flex-col items-center justify-between">
         <div className="m-5 w-full">
-          <h1 className="welcome-title left-align breakword text-black fontfamily">Srinidhi A</h1>
+          <h1 className="welcome-title ml-2 left-align breakword text-black fontfamily">Srinidhi A</h1>
           <br></br>
-          <span className="welcome-caption left-align breakword bold italic text-black fontfamily"><i>Freelance Full Stack Application Developer</i></span>
+          <span className="welcome-caption ml-2 left-align breakword bold italic text-black fontfamily"><i>Freelance Full-Stack Application Developer</i></span>
           <br></br><br></br><br></br><br></br>
-          <p className="bold left-align text-black fontfamily welcome-txt">Are you seeking to establish a quick, user-friendly website or any application to showcase your goods or company business? or in need of any kind of assistance with your project? or would like to make project inquiries? You are at the right place.</p>
+          <p className="bold left-align ml-2 text-black fontfamily welcome-txt">Are you seeking to establish a quick, user-friendly website or any application to showcase your goods or company business? or in need of any kind of assistance with your project? or would like to make project inquiries? You are at the right place.</p>
           <br></br>
-          <h4 className="bold left-align text-black fontfamily welcome-txt">Just say Hi 👋 Don't hesitate to reach me. I'll try to my best to reply. 😊 Click bio to know my works & offered services.</h4>
+          <h4 className="bold left-align ml-2 text-black fontfamily welcome-txt">Just say Hi 👋 Don't hesitate to reach me. I'll try to my best to reply. 😊 Click bio to know my works & offered services.</h4>
 
           <br></br>
           <br></br>
           <br></br>
-          <Button color="primary" className="button"> <a href="/about">SHORT BIO !</a></Button>
+          <Button color="primary" className="button ml-2"> <a href="/about">SHORT BIO !</a></Button>
           <br></br>
           <br></br>
           <br></br>
