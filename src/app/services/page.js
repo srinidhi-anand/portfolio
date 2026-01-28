@@ -22,7 +22,7 @@ export default function About() {
                 {skills.split(';').map((i) =>
                     <div key="i" className="text-align">
                         <span key="i" className="texteditor-inline flex flex-row">
-                            <i class="bi bi-airplane-engines-fill"></i>
+                            <i class="bi bi-airplane-engines-fill icon"></i>
                             <div key="i" className=" service texteditor-inline">{i.trim()}</div>
                         </span>
                     </div>

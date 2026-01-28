@@ -20,6 +20,13 @@ body {
   color: rgb(var(--foreground-rgb));
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

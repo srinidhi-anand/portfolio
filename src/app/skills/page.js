@@ -3,46 +3,52 @@
 import "../welcome.css";
 import "../about/about.css";
 import "../globals.css";
-import Link from 'next/link';
-import Image from "next/image";
-import { usePathname } from "next/navigation";
 import "./skills.css";
 import "../title.css";
 import Header from "../components/header";
 import Title from "../components/title";
-import Footer from "../components/footer";
 import BackToTop from "../components/backtotop";
+import { skillsData } from "./skillcard";
 
-export default function About() {
-    const pathname = usePathname();
+function divider() {
+    return (<div class="relative flex py-5 items-center">
+        <div class="flex-grow border-t border-gray-400"></div>
+        <div class="flex-grow border-t border-gray-400"></div>
+    </div>)
+}
 
-    const skillLabels = 'Languages ;Expert Tech Stacks;Python Frameworks;Frontend Tool ;Backend Tools ;React JS Tools; Databases;Project Management Tools;Version Control System ;Amazon Web Services ;Software Design Patterns;Web Services;IDE ;Operating Systems';
-
-    const skillValues = 'Python, R, React JS, JavaScript, Next.js, Angular JS; Next.js, Node.js, Typescript, Python;Kivy, Django;Ionic;Postman, Swagger;Material UI, TailWind UI, React Bootstrap, Axios;MSSQL, MySql, PostgreSQL, snowflake, MongoDB;JIRA; GitHub, Bit bucket, Git;AWS S3 , RDB;MVC, Agile SDLC methodology;Rest API;Visual Studio Code, Sublime, PyCharm;Windows 10, Mac, Ubuntu'.split(";");
+export default function Skills() {
+    const data = skillsData;
 
     return (
         <>
-        <Header />
-        <Title name="Skills" />
-        { skillLabels.split(';').map((i, index) => 
-            <div key={index} className="container flex">
-                <div key={'child1'+index} className="text-align-right w-1/2">
-                    <span key={'child'+index} className="texteditor">
-                        <span key={'child2'+index} className=" service texteditor">
-                            {i.trim()}
-                        </span>
-                    </span>
-                </div>
-                <div key={'child3'+index} className="text-align-left w-1/2">
-                    <span key={'child4'+index} className="texteditor">
-                        <span key={'child5'+index} className=" service texteditor">
-                            {skillValues[`${index}`].trim()}
-                        </span>
-                    </span>
-                </div>
-            </div>
-        )}
-        <BackToTop />
+            <Header />
+            <Title name="Skills" />
+            {
+                data.map((item, index) => {
+                    return (
+                        <>
+                            {index > 0 && divider()}
+                            <div className="skill-section w-full ml-12 flex flex-row">
+                                <div className="texteditor skill-section-title w-64 flex-shrink-0 mr-2">{item.type}</div>
+                                <div className="skill-section-list flex-1 w-full mx-auto p-4 grid grid-cols-4 md:grid-cols-6 lg:grid-cols-11 gap-6">
+                                    {
+                                        item.list.map((skill, index) => (
+                                            <div key={index} className="skill-section-list-item text-center">
+                                                <div className="skill-section-list-item-icon">
+                                                    <div className='skill-icon'>{skill.icon}</div>
+                                                </div>
+                                                <div className="skill-section-list-item-name">{skill.name}</div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        </>
+                    )
+                })
+            }
+            <BackToTop />
         </>
     )
 }

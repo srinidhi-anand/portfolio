@@ -4,16 +4,16 @@ import "../../app/globals.css";
 
 export default function Footer() {
     return (
-        <div className="social-icons-module">
+        <div className="social-icons-module footer">
             <ul className="project-module breakword project-module-social_icons social">
             <li>
-            <SocialIcon className="bg-cyanblue" target="_blank" url="https://www.linkedin.com/in/srinidhi-a-8a5308bb/" />
+            <SocialIcon className="bg-black" bgColor="black" target="_blank" url="https://www.linkedin.com/in/srinidhi-a-8a5308bb/" />
             </li>
             <li>
-            <SocialIcon className="bg-black" target="_blank" url="https://github.com/srinidhi-anand" />
+            <SocialIcon className="bg-black" bgColor="black" target="_blank" url="https://github.com/srinidhi-anand" />
             </li>
             <li>
-            <SocialIcon className="bg-black" target="_blank" url="https://medium.com/@srinidhi_anand" />
+            <SocialIcon className="bg-black" bgColor="black" target="_blank" url="https://medium.com/@srinidhi_anand" />
             </li>
             </ul>
         </div>
