@@ -5,6 +5,24 @@
     width: 257px;
 }
 
+.arrow-icon {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-size: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+}
+
+.img__wrap .img__img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
 .img__description_layer {
     position: absolute;
     top: 0;
