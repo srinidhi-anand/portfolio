@@ -19,7 +19,6 @@ export default function Subcontent(props) {
     const [selectedImageSrc, setSelectedImageSrc] = useState(null);
 
     const handleImageClick = (src) => {
-        console.log('src', src)
         setSelectedImageSrc(src);
     };
 
