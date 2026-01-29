@@ -12,7 +12,7 @@ export default function SubHeader() {
 
     return (
         <>
-            <div className="w-full pl-28 flex flex-row">
+            <div className="w-full pl-8 flex flex-row">
                 <div className="w-1/6"><Image
                     src='/logo.jpeg'
                     alt='logo'

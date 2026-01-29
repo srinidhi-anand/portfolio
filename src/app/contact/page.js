@@ -7,12 +7,13 @@ import Header from "../components/header";
 import Title from "../components/title";
 import Footer from "../components/footer";
 import BackToTop from "../components/backtotop";
-import React, { useEffect, useState } from "react";
+import React, { useState, useRef } from "react";
 import { useRouter } from "next/navigation";
 import "./contact.css";
 
 export default function Contact() {
     const router = useRouter();
+    const formRef = useRef(null);
     const [formData, setFormData] = useState({
         name: "",
         email: "",
@@ -25,9 +26,9 @@ export default function Contact() {
     const [isFormValid, setIsFormValid] = useState(false);
     const [errors, setErrors] = useState({});
 
-    const validateForm = () => {
+    const validateForm = (formData) => {
         let errors = {};
-
+        setErrors(errors);
         if (!formData.name) {
             errors.name = 'Name is required.';
         }
@@ -74,12 +75,13 @@ export default function Contact() {
             ...prevState,
             [fieldName]: fieldValue
         }));
+        validateForm(formData);
     }
 
     const submitForm = async (e) => {
         // We don't want the page to refresh
         e.preventDefault()
-        validateForm();
+        validateForm(formData);
         if (isFormValid === true) {
             const formURL = e.target.action
             const data = new FormData()
@@ -100,11 +102,12 @@ export default function Contact() {
             else {
                 setFormSuccess(false);
             }
+            formRef.current?.reset()
         } else {
             alert('Please fill the fields correctly and resolve errors before submitting.');
         }
     }
-
+    console.log(formData);
     return (
         <>
             <Header />
@@ -116,34 +119,34 @@ export default function Contact() {
                 <><div className="center contact-form texteditor-contact">Submitted. Thanks for Reaching Out! </div><div className="center contact-form texteditor-contact"> <button className="center contact-form texteditor-contact primary" onClick={resetForm}> Submit Another Request</button></div></>
                 : (
                     <div className="center project-module-form project-module module form texteditor-contact w-full">
-                        <form className="contact-form" method="POST" action="#" onSubmit={submitForm}>
+                        <form ref={formRef} autoComplete="off" className="contact-form" method="POST" action="#" onSubmit={submitForm}>
                             <div className="form-input flex flex-col">
                                 <label htmlFor="name" className="required">Name</label>
-                                <input type="text" name="name" data-validate="required,Generic" placeholder="Your Name..." required value={formData.name} onChange={handleInput} />
+                                <input type="text" name="name" data-validate="required,Generic" placeholder="Your Name..." required value={formData.name} onChange={(e) => handleInput(e)} />
                                 {errors && errors.name && <p className="error">{errors.name}</p>}
                             </div>
 
                             <div className="form-input flex flex-col">
                                 <label htmlFor="email" className="required">Email</label>
-                                <input placeholder="Your Email..." type="text" onChange={handleInput} name="email" value={formData.email} required />
+                                <input placeholder="Your Email..." type="text" onChange={(e) => handleInput(e)} name="email" value={formData.email} required />
                                 {errors && errors.email && <p className="error">{errors.email}</p>}
                             </div>
 
                             <div className="form-input flex flex-col">
                                 <label htmlFor="mobile" className="required">Mobile No.</label>
-                                <input placeholder="Enter your valid Mobile Number" onChange={handleInput} type="number" value={formData.mobile} name="mobile" required />
+                                <input placeholder="Enter your valid Mobile Number" onChange={(e) => handleInput(e)} type="number" value={formData.mobile} name="mobile" required />
                                 {errors && errors.mobile && <p className="error">{errors.mobile}</p>}
                             </div>
 
                             <div className="form-input flex flex-col">
                                 <label htmlFor="projectDetails" className="required">Project Tech Requirements</label>
-                                <textarea placeholder="Provide the tech stack e.g Python, React.js" name="projectDetails" value={formData.projectDetails} onChange={handleInput} required></textarea>
+                                <textarea placeholder="Provide the tech stack e.g Python, React.js" name="projectDetails" value={formData.projectDetails} onChange={(e) => handleInput(e)} required></textarea>
                                 {errors && errors.projectDetails && <p className="error">{errors.projectDetails}</p>}
                             </div>
 
                             <div className="form-input flex flex-col">
                                 <label htmlFor="message">Message</label>
-                                <textarea placeholder="Your Message..." name="message" onChange={handleInput} value={formData.message}></textarea>
+                                <textarea placeholder="Your Message..." name="message" onChange={(e) => handleInput(e)} value={formData.message}></textarea>
                             </div>
 
                             <div className="w-35 items-center center justify-start">

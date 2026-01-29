@@ -5,14 +5,28 @@ import { works } from "../../../helper/projDescription";
 import SplitPane from 'react-split-pane';
 import Image from "next/image";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useState } from "react";
+import ModalComponent from "./modal";
 
-export default async function Subcontent(props) {
+export default function Subcontent(props) {
     const { title } = props;
     const { stack, text, url, image_count, extension } = works[`${title}`];
     const descriptions = text.split('.');
     let fileNames = Array.from(Array(image_count).keys()).map((item) => `/${url}${item + 1}.${extension[item]}`);
     let files = fileNames || [];
     const gridSize = files.length < 2 ? 9 : 5;
+
+    const [selectedImageSrc, setSelectedImageSrc] = useState(null);
+
+    const handleImageClick = (src) => {
+        console.log('src', src)
+        setSelectedImageSrc(src);
+    };
+
+    const handleCloseModal = () => {
+        setSelectedImageSrc(null);
+    }
+
     return (
         <>
             <div className="position-relative">
@@ -30,11 +44,18 @@ export default async function Subcontent(props) {
                                         layout="responsive"
                                         width={800}
                                         height={600}
-                                        className="card-img-top"
+                                        onClick={() => handleImageClick(src)}
+                                        className="card-img-top cursor-pointer hover:opacity-80 transition duration-300"
                                     />
                                 </div>
                             </div>
                         ))}
+                        {selectedImageSrc && (
+                            <ModalComponent
+                                src={selectedImageSrc}
+                                onClose={handleCloseModal}
+                            />
+                        )}
                     </div>
                     <div className="mt-3 pt-6 pl-8 pr-8 pb-2">
                         {descriptions.map((item, index) => (

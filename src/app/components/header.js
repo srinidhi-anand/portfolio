@@ -11,24 +11,18 @@ export default function Header() {
     return (
         <div className="site-header project-title">
             <ul className="w-5/6">
-                <li>
-                    <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}>Home</Link>
-                </li>
-                <li>
-                    <Link href="/about" className={`link ${pathname === '/about' ? 'active' : ''}`}>About</Link>
-                </li>
-                <li>
-                    <Link href="/skills" className={`link ${pathname === '/skills' ? 'active' : ''}`}>Skills</Link>
-                </li>
-                <li>
-                    <Link className={`link ${pathname === '/services' ? 'active' : ''}`} href="/services">Services</Link>
-                </li>
-                <li>
-                    <Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href="/projects">Projects</Link>
-                </li>
-                <li>
-                    <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} href="/contact">Contact</Link>
-                </li>
+
+                <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}><li>Home</li></Link>
+
+                <Link href="/about" className={`link ${pathname === '/about' ? 'active' : ''}`}><li>About</li></Link>
+
+                <Link href="/skills" className={`link ${pathname === '/skills' ? 'active' : ''}`}><li>Skills</li></Link>
+
+                <Link className={`link ${pathname === '/services' ? 'active' : ''}`} href="/services"><li>Services</li></Link>
+
+                <Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href="/projects"><li>Projects</li></Link>
+
+                <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} href="/contact"><li>Contact</li></Link>
             </ul>
             <div className="align w-96">
                 <Image
