@@ -163,16 +163,16 @@ a {
     background-color: black !important;
 }
 
-.button:hover, .button:active, .button:focus, .button {
+.button:hover, .button:active, .button:focus, .button .btn .btn-primary {
     background-color: black !important;
-    color: rgb(239, 230, 230);
-    font-family: georgia, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: bold;
-    line-height: 2px;
+    color: rgb(239, 230, 230) !important;
+    font-family: georgia, serif !important;
+    font-size: 14px !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    line-height: 2px !important;
     border: 1px solid rgb(33, 3, 2) !important;
-    padding: 20px 20px;
+    padding: 20px 20px !important;
     text-align: center;
     text-decoration: none;
     display: inline-block;
