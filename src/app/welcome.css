@@ -163,7 +163,7 @@ a {
     background-color: black !important;
 }
 
-.button:hover, .button:active, .button:focus, .button .btn .btn-primary {
+.button:hover, .button:active, .button:focus, .button {
     background-color: black !important;
     color: rgb(239, 230, 230) !important;
     font-family: georgia, serif !important;
