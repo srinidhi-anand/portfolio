@@ -21,7 +21,7 @@ export default function Home() {
           <br></br>
           <br></br>
           <br></br>
-          <a className="ml-2" href="/about"><Button color="primary" className="button">SHORT BIO !</Button></a>
+          <a className="ml-2" href="/about"><button className="button btn btn-primary">SHORT BIO !</button></a>
           <br></br>
           <br></br>
           <br></br>
