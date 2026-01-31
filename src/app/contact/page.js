@@ -90,12 +90,10 @@ export default function Contact() {
             Object.entries(formData).forEach(([key, value]) => {
                 data.append(key, value);
             })
-            console.log('form Data framed', data);
             const response = await fetch('/api/contact', {
                 method: 'post',
                 body: data,
             });
-            console.log(response);
             if (response.status === 200) {
                 setFormSuccess(response.status);
             }
@@ -107,7 +105,7 @@ export default function Contact() {
             alert('Please fill the fields correctly and resolve errors before submitting.');
         }
     }
-    console.log(formData);
+
     return (
         <>
             <Header />

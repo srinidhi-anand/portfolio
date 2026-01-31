@@ -8,7 +8,7 @@ export const skillsData = [
             { icon: <i className="devicon-tailwindcss-plain colored text-6xl" />, name: 'TailwindCSS' },
             { icon: <i className="devicon-bootstrap-plain colored text-6xl" />, name: 'Bootstrap' },
             { icon: <i className="devicon-angularjs-plain colored text-6xl" />, name: 'AngularJS' },
-            { icon: <i class="devicon-ionic-original colored text-6xl" />, name: 'Ionic' },
+            { icon: <i className="devicon-ionic-original colored text-6xl" />, name: 'Ionic' },
             { icon: <i className="devicon-html5-plain colored text-6xl" />, name: 'HTML5' },
             { icon: <i className="devicon-css3-plain colored text-6xl" />, name: 'CSS3' },
             { icon: <i className="devicon-typescript-plain colored text-6xl" />, name: 'Typescript' },
@@ -103,7 +103,7 @@ export const skillsData = [
         type: 'Cloud Services',
         list: [
             {
-                icon: <i class="devicon-amazonwebservices-plain-wordmark colored text-6xl" />,
+                icon: <i className="devicon-amazonwebservices-plain-wordmark colored text-6xl" />,
                 name: 'AWS'
             },
             {
@@ -120,7 +120,7 @@ export const skillsData = [
                 name: 'Windows'
             },
             {
-                icon: <i class="devicon-apple-original colored text-6xl" />,
+                icon: <i className="devicon-apple-original colored text-6xl" />,
                 name: 'MacOS'
             },
             {

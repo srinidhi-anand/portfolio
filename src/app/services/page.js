@@ -19,11 +19,11 @@ export default function About() {
             <Header />
             <Title name="Services" />
             <div className="standard-modules modules text project-module-text">
-                {skills.split(';').map((i) =>
-                    <div key="i" className="text-align">
-                        <span key="i" className="texteditor-inline flex flex-row">
-                            <i class="bi bi-airplane-engines-fill icon"></i>
-                            <div key="i" className=" service texteditor-inline">{i.trim()}</div>
+                {skills.split(';').map((i, index) =>
+                    <div key={i} className="text-align">
+                        <span key={i + index} className="texteditor-inline flex flex-row">
+                            <i className="bi bi-airplane-engines-fill icon"></i>
+                            <div key={i + index + 1} className=" service texteditor-inline">{i.trim()}</div>
                         </span>
                     </div>
                 )}

@@ -9,22 +9,24 @@ export default function Header() {
     const pathname = usePathname();
 
     return (
-        <div className="site-header project-title">
-            <ul className="w-5/6">
+        <div className="site-header w-auto project-title flex flex-row">
+            <div className="title-header w-[95%]">
+                <ul className="w-[95%]">
 
-                <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}><li>Home</li></Link>
+                    <Link href="/" className={`link ${pathname === '/' ? 'active' : ''}`}><li>Home</li></Link>
 
-                <Link href="/about" className={`link ${pathname === '/about' ? 'active' : ''}`}><li>About</li></Link>
+                    <Link href="/about" className={`link ${pathname === '/about' ? 'active' : ''}`}><li>About</li></Link>
 
-                <Link href="/skills" className={`link ${pathname === '/skills' ? 'active' : ''}`}><li>Skills</li></Link>
+                    <Link href="/skills" className={`link ${pathname === '/skills' ? 'active' : ''}`}><li>Skills</li></Link>
 
-                <Link className={`link ${pathname === '/services' ? 'active' : ''}`} href="/services"><li>Services</li></Link>
+                    <Link className={`link ${pathname === '/services' ? 'active' : ''}`} href="/services"><li>Services</li></Link>
 
-                <Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href="/projects"><li>Projects</li></Link>
+                    <Link className={`link ${pathname === '/projects' ? 'active' : ''}`} href="/projects"><li>Projects</li></Link>
 
-                <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} href="/contact"><li>Contact</li></Link>
-            </ul>
-            <div className="align w-96">
+                    <Link className={`link ${pathname === '/contact' ? 'active' : ''}`} href="/contact"><li>Contact</li></Link>
+                </ul>
+            </div>
+            <div className="align">
                 <Image
                     src='/logo.jpeg'
                     alt='logo'
