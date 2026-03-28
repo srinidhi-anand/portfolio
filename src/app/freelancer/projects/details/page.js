@@ -4,10 +4,10 @@ import "../../../welcome.css";
 import "../../about/about.css";
 import "../../../globals.css";
 import "../projects.css";
-import Title from "@/app/freelancer/components/title";
-import BackToTop from "@/app/freelancer/components/backtotop";
-import SubHeader from "@/app/freelancer/components/subheader";
-import Subcontent from "@/app/freelancer/components/subcontent";
+import Title from "../../components/title";
+import BackToTop from "../../components/backtotop";
+import SubHeader from "../../components/subheader";
+import Subcontent from "../../components/subcontent";
 import Footer from "../../components/footer";
 
 export default function Project1(props) {
