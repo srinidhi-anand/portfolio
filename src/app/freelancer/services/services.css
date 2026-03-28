@@ -1,0 +1,105 @@
+/* .project-module-text {
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    width: 96%;
+}
+
+.standard-modules .modules .text {
+    padding-top: 0px;
+    padding-bottom: 40px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: 100%;
+}
+.project-module {
+    clear: both;
+    word-break: break-word;
+    position: relative;
+    width: 100%;
+}
+.texteditor-inline {
+    font-size: 14px;
+    color: black;
+    padding-left: 3%;
+    font-family: georgia, serif;
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+}
+.text-align {
+    text-align: left;
+}
+.service {
+    padding-left: 1.5%;
+    width:96%;
+    word-wrap: break-word;
+    text-align: justify;
+}
+
+.icon {
+    font-size: 0.975rem;
+    line-height: 2.4rem;
+} */
+
+/* FL SERVICES */
+.fl-services {
+  padding: 64px 48px;
+  background: #f3f3ee;
+}
+.fl-services-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fl-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 32px;
+}
+.fl-service-card {
+  background: var(--fl-surface);
+  border-radius: 16px;
+  padding: 28px;
+  border: 1px solid var(--fl-border);
+  transition: box-shadow 0.2s;
+}
+.fl-service-icon {
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.fl-service-card h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--fl-ink);
+  margin-bottom: 10px;
+}
+.fl-service-card p {
+  font-size: 14px;
+  color: var(--fl-muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.fl-service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+.fl-service-tag {
+  font-size: 11px;
+  background: var(--fl-accent-light);
+  color: var(--fl-accent);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+.fl-service-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--fl-accent);
+}

@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer';
+import { getSeniorTemplate, getFreelancerTemplate } from './templates'
 
 require('dotenv').config();
 
@@ -21,13 +22,17 @@ export default async function emailService(data) {
         }
     });
 
+    const mailType = formData.company ? 'Job Opportunity' : 'Freelance project';
+    const isJobTemplate = formData.company ? true : false;
+
     // Configure the mailoptions object
     const mailOptions = {
         from: formData.email,
         to: 'srinidhianand4@gmail.com',
-        subject: `Mail from ${formData.name} - Freelance project`,
-        html: `<h1>Welcome</h1><br/> <h2>Hey Sri, you got a new freelance Call!</h2><br/> <h4><b>Project Details: </b></h4><br/> <h4>${formData.projectDetails}</h4><p>${formData.message}</p><br/><p>Contact Details: ${formData.mobile ? formData.mobile : 'No mobile Number'}</p><br/><br/><br/><br/><br/><br/><br/>`,
+        subject: `Mail from ${formData.name} - ${mailType}`,
+        html: isJobTemplate ? getSeniorTemplate(formData) : getFreelancerTemplate(formData),
     };
+
 
     await new Promise((resolve, reject) => {
         transporter.verify(function (error, success) {

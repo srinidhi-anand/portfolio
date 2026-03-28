@@ -1,0 +1,102 @@
+/* .text-align-right {
+    text-align: right;
+    padding-right: 0.5%;
+}
+.text-align-left {
+    text-align: left;
+    padding-left: 0.5%;
+}
+.texteditor {
+    font-size: 14px;
+    color: black;
+    font-family: georgia, serif;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+} */
+
+.fl-skills {
+  padding: 64px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.fl-section-label {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--fl-accent);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.fl-section-title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--fl-ink);
+  margin-bottom: 8px;
+}
+.fl-section-sub {
+  color: var(--fl-muted);
+  font-size: 15px;
+  margin-bottom: 32px;
+}
+.fl-skill-legend {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.fl-skill-legend span {
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 100px;
+  align-items: center;
+}
+.fl-leg-expert {
+  background: var(--fl-accent);
+  color: white;
+}
+.fl-leg-prof {
+  border: 1.5px solid var(--fl-accent);
+  color: var(--fl-accent);
+}
+.fl-leg-learn {
+  background: #f3f3ee;
+  color: var(--fl-muted);
+}
+.fl-skill-group {
+  margin-bottom: 28px;
+}
+.fl-skill-group h4 {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--fl-muted);
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.fl-skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.fl-tag {
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+.fl-tag-expert {
+  background: var(--fl-accent);
+  color: white;
+}
+.fl-tag-prof {
+  border: 1.5px solid var(--fl-accent);
+  color: var(--fl-accent);
+  background: transparent;
+}
+.fl-tag-learn {
+  background: #f3f3ee;
+  color: var(--fl-muted);
+}

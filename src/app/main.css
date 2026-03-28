@@ -1,0 +1,334 @@
+/* ─── Google Fonts import ─── */
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&display=swap");
+
+/* ─── Stage ─── */
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  position: relative;
+  overflow: hidden;
+  background: #0c0c10;
+}
+
+/* ─── Vertical centre line ─── */
+.bg-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: #1e1e28;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+/* ─── Header text ─── */
+.greeting {
+  font-family: "DM Mono", monospace;
+  font-size: 11px;
+  font-weight: 400;
+  color: #fdfdfd;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  animation: fadeUp 0.6s ease both;
+}
+
+.name {
+  font-family: "DM Serif Display", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #e8e8f0;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+  text-align: center;
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.08s;
+}
+
+.tagline {
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  margin-top: 1%;
+  font-weight: 300;
+  color: #fbfbfb;
+  margin-bottom: 52px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.15s;
+}
+
+/* ─── Cards grid ─── */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  width: 100%;
+  max-width: 580px;
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.25s;
+  list-style: none;
+}
+
+/* ─── Individual card ─── */
+.card {
+  position: relative;
+  border-radius: 16px;
+  padding: 28px 24px 24px;
+  cursor: pointer;
+  transition:
+    transform 0.22s ease,
+    border-color 0.22s ease;
+  border: 1px solid #1e1e28;
+  background: #111118;
+  overflow: hidden;
+  text-align: left;
+  text-decoration: none; /* removes <Link> underline */
+  display: block; /* <Link> is inline by default */
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Freelancer hover tint */
+.card-fl::before {
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(59, 130, 246, 0.06) 0%,
+    transparent 65%
+  );
+}
+
+/* Senior hover tint */
+.card-sr::before {
+  background: radial-gradient(
+    circle at 70% 30%,
+    rgba(124, 106, 247, 0.07) 0%,
+    transparent 65%
+  );
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-fl:hover {
+  border-color: #1d3d6b;
+}
+
+.card-sr:hover {
+  border-color: #3a2f7a;
+}
+
+.card-fl:hover::before,
+.card-sr:hover::before {
+  opacity: 1;
+}
+
+/* ─── Shimmer blob ─── */
+.card-shimmer {
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.shimmer-fl {
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.08) 0%,
+    transparent 70%
+  );
+}
+
+.shimmer-sr {
+  background: radial-gradient(
+    circle,
+    rgba(124, 106, 247, 0.09) 0%,
+    transparent 70%
+  );
+}
+
+.card:hover .card-shimmer {
+  opacity: 1;
+}
+
+/* ─── Card dot ─── */
+.card-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.dot-fl {
+  background: #2563eb;
+}
+.dot-sr {
+  background: #7c6af7;
+}
+
+/* ─── Card label ─── */
+.card-label {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.label-fl {
+  color: #1d4ed8;
+}
+.label-sr {
+  color: #6d5ce8;
+}
+
+/* ─── Card title ─── */
+.card-title {
+  font-family: "DM Serif Display", serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #d8d8e8;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+/* ─── Card description ─── */
+.card-desc {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #44445a;
+  line-height: 1.65;
+  margin-bottom: 22px;
+}
+
+/* ─── Tech tags ─── */
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-bottom: 22px;
+  list-style: none;
+  padding: 0;
+}
+
+.tag {
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  padding: 3px 9px;
+  border-radius: 4px;
+  letter-spacing: 0.04em;
+}
+
+.tag-fl {
+  background: #0f2040;
+  color: #3b82f6;
+}
+.tag-sr {
+  background: #1a1540;
+  color: #8b7cf8;
+}
+
+/* ─── Card CTA row ─── */
+.card-cta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  transition: gap 0.2s ease;
+}
+
+.cta-fl {
+  color: #3b82f6;
+}
+.cta-sr {
+  color: #8b7cf8;
+}
+
+.card:hover .card-cta {
+  gap: 12px;
+}
+
+/* ─── CTA arrow circle ─── */
+.cta-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  flex-shrink: 0;
+}
+
+.arrow-fl {
+  background: #0f2040;
+}
+.arrow-sr {
+  background: #1a1540;
+}
+
+.card:hover .cta-arrow {
+  transform: translateX(2px);
+}
+
+/* ─── Footer hint ─── */
+.footer-hint {
+  margin-top: 32px;
+  font-family: "DM Mono", monospace;
+  font-size: 10px;
+  color: #2a2a38;
+  letter-spacing: 0.12em;
+  animation: fadeUp 0.9s ease both;
+  animation-delay: 0.4s;
+}
+
+/* ─── Entrance animation ─── */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Responsive — stack cards on small screens ─── */
+@media (max-width: 520px) {
+  .name {
+    font-size: 28px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+  }
+  .bg-line {
+    display: none;
+  }
+  .tagline {
+    margin-bottom: 36px;
+  }
+}

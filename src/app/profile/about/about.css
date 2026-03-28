@@ -1,0 +1,75 @@
+.sr-about {
+  padding: 72px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.sr-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.sr-about-bio p {
+  font-size: 15px;
+  color: #b0b0c8;
+  line-height: 1.8;
+  margin-bottom: 14px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.sr-about-bio .quals {
+  color: white;
+}
+
+.sr-highlight {
+  color: var(--sr-accent2);
+  font-weight: 500;
+}
+.sr-stats-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.sr-stat-card {
+  background: var(--sr-card);
+  border: 1px solid var(--sr-border);
+  border-radius: 14px;
+  padding: 22px;
+}
+.bc-accent {
+  border-color: var(--sr-accent2);
+}
+
+.sr-stat-card-color {
+  color: var(--sr-accent2);
+}
+.sr-stat-card strong {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--sr-accent);
+  font-family: "Fraunces", serif;
+}
+.sr-stat-card span {
+  display: block;
+  font-size: 13px;
+  color: var(--sr-muted);
+  margin-top: 4px;
+}
+.sr-edu-list {
+  margin-top: 32px;
+}
+.sr-edu-item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--sr-border);
+}
+.sr-edu-item strong {
+  font-size: 14px;
+  color: var(--sr-ink);
+}
+.sr-edu-item span {
+  display: block;
+  font-size: 13px;
+  color: var(--sr-muted);
+  margin-top: 4px;
+}

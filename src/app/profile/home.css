@@ -1,0 +1,108 @@
+.sr-hero {
+  padding: 88px 48px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 22px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+.sr-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 600px 400px at 50% -100px,
+    rgba(124, 106, 247, 0.18) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.sr-role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--sr-border);
+  padding: 7px 18px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-family: "JetBrains Mono", monospace;
+  background: var(--sr-card);
+}
+.sr-role-badge span {
+  color: var(--sr-accent2);
+}
+.sr-hero h1 {
+  font-family: "Fraunces", serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.15;
+  max-width: 680px;
+}
+.sr-hero h1 em {
+  font-style: normal;
+  color: var(--sr-accent);
+}
+.sr-hero p {
+  color: var(--sr-muted);
+  font-size: 16px;
+  max-width: 520px;
+  line-height: 1.7;
+}
+.sr-stack-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 4px;
+}
+.sr-stack-tag {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  padding: 5px 14px;
+  border: 1px solid var(--sr-border);
+  border-radius: 6px;
+  background: var(--sr-card);
+}
+.sr-cta-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+.sr-btn-primary {
+  background: var(--sr-accent);
+  color: white;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.sr-btn-outline {
+  background: transparent;
+  color: white;
+  border: 1px solid blue;
+  padding: 13px 28px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.sr-btn-outline:hover {
+  color: blueviolet;
+  background-color: lightskyblue;
+}
+
+.sr-btn-primary:hover {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.sr-footer {
+  color: white;
+}

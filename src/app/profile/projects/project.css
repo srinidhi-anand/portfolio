@@ -1,0 +1,125 @@
+.proj-stack {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sr-projects {
+  padding: 72px 48px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.sr-proj-featured {
+  background: var(--sr-card);
+  border: 1px solid var(--sr-accent);
+  border-radius: 18px;
+  padding: 32px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.sr-proj-featured::before {
+  content: "";
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(124, 106, 247, 0.15) 0%,
+    transparent 70%
+  );
+}
+.sr-feat-badge {
+  display: inline-block;
+  background: rgba(124, 106, 247, 0.15);
+  color: var(--sr-accent);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  letter-spacing: 0.06em;
+}
+.sr-proj-featured h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--sr-ink);
+  margin-bottom: 10px;
+}
+.sr-proj-featured p {
+  font-size: 14px;
+  color: var(--sr-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+.sr-proj-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--sr-border);
+}
+.sr-proj-meta-item span {
+  display: block;
+  font-size: 11px;
+  color: var(--sr-muted);
+  margin-bottom: 4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono", monospace;
+}
+.sr-proj-meta-item strong {
+  font-size: 14px;
+  color: var(--sr-ink);
+}
+.sr-proj-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+.sr-proj-card {
+  background: var(--sr-card);
+  border: 1px solid var(--sr-border);
+  border-radius: 14px;
+  padding: 24px;
+}
+.sr-proj-card-icon {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.sr-proj-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--sr-ink);
+  margin-bottom: 8px;
+}
+.sr-proj-card p {
+  font-size: 13px;
+  color: var(--sr-muted);
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.sr-proj-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.sr-proj-tech {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 11px;
+  color: var(--sr-accent);
+  border: 1px solid rgba(124, 106, 247, 0.3);
+  padding: 3px 9px;
+  border-radius: 5px;
+  background: rgba(124, 106, 247, 0.05);
+}
+.sr-proj-tech.teal {
+  color: var(--sr-accent2);
+  border-color: rgba(45, 212, 191, 0.3);
+  background: rgba(45, 212, 191, 0.05);
+}

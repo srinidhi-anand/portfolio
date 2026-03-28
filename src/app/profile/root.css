@@ -1,0 +1,110 @@
+root {
+  background-color: black;
+}
+.sr-wrap {
+  background: var(--sr-bg);
+  color: var(--sr-ink);
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.sr-nav {
+  background: rgba(13, 13, 18, 0.94);
+  border-bottom: 1px solid var(--sr-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: 64px;
+  /* position: sticky; */
+  top: 56px;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+}
+.sr-nav-logo {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+}
+.sr-nav-logo img {
+  clip-path: circle(80% at center);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  mix-blend-mode: screen;
+  object-fit: cover;
+  border-radius: 91%;
+  -webkit-mask-image: linear-gradient(black, black);
+  color: transparent;
+  mask-image: linear-gradient(black, black);
+  height: 50px; /* Adjust to fit your header height */
+  filter: contrast(1.5) brightness(1.2);
+}
+
+.sr-nav-logo .accent {
+  color: var(--sr-accent);
+}
+.sr-nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.sr-nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  transition: color 0.15s;
+  font-family: georgia, serif;
+}
+
+.sr-nav-links a.active {
+  text-decoration: none;
+  color: #ae22f9;
+}
+
+.sr-nav-links a:hover {
+  color: #1414ea;
+}
+.sr-nav-cta {
+  background: var(--sr-accent);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.page-section {
+  display: block;
+  background: rgba(13, 13, 18, 0.94);
+  border-bottom: 1px solid var(--sr-border);
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 48px;
+  height: auto;
+  /* position: sticky; */
+  top: 56px;
+  backdrop-filter: blur(12px);
+}
+
+.sr-section-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  color: var(--sr-accent);
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+.sr-section-title {
+  font-family: "Fraunces", serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--sr-ink);
+  margin-bottom: 8px;
+}
+.sr-section-sub {
+  color: var(--sr-muted);
+  font-size: 15px;
+  margin-bottom: 40px;
+}
