@@ -19,7 +19,7 @@ export default function About() {
         <>
             <Header />
             <Title name="Services" />
-            <div className="page-section" id="fl-services">
+            <div className="page-section-fl" id="fl-services">
                 <section className="fl-services">
                     <div className="fl-services-inner">
                         <div className="fl-section-label">What I offer</div>

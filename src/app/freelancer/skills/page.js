@@ -8,6 +8,7 @@ import "../title.css";
 import Header from "../components/header";
 import Title from "../components/title";
 import BackToTop from "../components/backtotop";
+import React from 'react';
 import { skills } from "./skillcard";
 import Footer from "../components/footer";
 
@@ -25,7 +26,7 @@ export default function Skills() {
         <>
             <Header />
             <Title name="Skills" />
-            <div className="page-section" id="fl-skills">
+            <div className="page-section-fl" id="fl-skills">
                 <section className="fl-skills">
                     <div className="fl-section-label">Technical Expertise</div>
                     <div className="fl-section-sub">Proficiency levels across my core stack</div>
@@ -37,15 +38,15 @@ export default function Skills() {
                     {
                         Object.entries(data).map(([k, v], index) => {
                             return (
-                                <>{index > 0 && divider()}
+                                <React.Fragment key={k}>{index > 0 && divider()}
                                     <div className="fl-skill-group">
                                         <h4>{k}</h4>
                                         <div className="fl-skill-tags">
-                                            {Object.keys(v).map((key, i) => (v[key].map(item => <span key={'tag' + i} id={'tag' + i} className={'fl-tag fl-tag-' + key} > {item}</span>)))
+                                            {Object.keys(v).flatMap((key, i) => (v[key].map(item => <span key={'tag-' + i + item} id={'tag-' + i + item} className={'fl-tag fl-tag-' + key} > {item}</span>)))
                                             }
                                         </div>
                                     </div>
-                                </>)
+                                </React.Fragment>)
                         })
                     }
                 </section >

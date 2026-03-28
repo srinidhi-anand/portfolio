@@ -126,7 +126,7 @@ export default function Contact() {
                 <><div className="center contact-form texteditor-contact">Submitted. Thanks for Reaching Out! </div><div className="center contact-form texteditor-contact"> <button className="center contact-form texteditor-contact primary" onClick={resetForm}> Submit Another Request</button></div></>
                 : (
                     // <div className="center project-module-form project-module module form texteditor-contact w-full">
-                    <div className="page-section" id="fl-contact">
+                    <div className="page-section-fl" id="fl-contact">
                         <section className="fl-contact">
                             <div className="fl-section-label">Get in touch</div>
                             <div className="fl-section-title">Let's Work Together</div>

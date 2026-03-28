@@ -9,6 +9,7 @@ import Title from "../components/title";
 import Footer from "../components/footer";
 import BackToTop from "../components/backtotop";
 import Image from "next/image";
+import React from 'react';
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -33,7 +34,7 @@ export default function Projects() {
             <Header />
             <Title name="Projects" description="" cls="projectclass" />
 
-            <div className="page-section" id="fl-projects">
+            <div className="page-section-fl" id="fl-projects">
                 <section className="fl-projects">
                     <div className="fl-section-label fl-section-label-proj">Selected Work</div>
 
@@ -43,7 +44,7 @@ export default function Projects() {
                     <div className='gallery'>
                         {media_urls.map((media) => (
 
-                            <>
+                            <React.Fragment key={media.id}>
                                 <div key={media.id} className="img__wrap">
 
                                     <Image key={`img_${media.id + 1}`} width='257' height='200' src={media.url} className="img__img" alt={media.title}
@@ -70,7 +71,7 @@ export default function Projects() {
                                     <p>{ProjectCards[media.title].description}</p>
                                     <span className="fl-proj-outcome">{ProjectCards[media.title].outcome}</span>
                                 </div>)}
-                            </>
+                            </React.Fragment>
                         ))}
 
 
