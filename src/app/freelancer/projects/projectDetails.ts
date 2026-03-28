@@ -53,7 +53,7 @@ export const ProjectCards = {
     name: "Monarch - Agilent",
     description:
       "CPQ system development with Contract and materials using SAP CPQ tool",
-    outcome: "📈 Reduces test writing time ~70%",
+    outcome: "CPQ contracts & materials delivery · enterprise-grade scale",
   },
   BioTek: {
     icon: "📊",

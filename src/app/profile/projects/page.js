@@ -33,13 +33,24 @@ export default function Project() {
                         <div className="sr-proj-card">
                             <div className="sr-proj-card-icon">🧩</div>
                             <h3>Fabric 1P Project</h3>
-                            <p>Collaborated with Microsoft to bring no-code, collaborative planning, budgeting, forecasting, and data write-back capabilities directly to Microsoft Fabric and Power BI semantic models, eliminating the need for data movement or siloed planning applications.<br /> <br /> Mainly involved in architectural design of code handling to maintain data storage via onelake with highly secured connectivity.</p>
+                            <p>Collaborated with Microsoft to bring no-code planning, budgeting,
+                                and forecasting capabilities directly into Microsoft Fabric and
+                                Power BI semantic models — eliminating data movement and siloed
+                                planning workflows.
+
+                                Architected the data storage layer using OneLake with high-security
+                                connectivity, ensuring enterprise-grade reliability and scalability.</p>
                             <div className="sr-proj-card-stack"><span className="sr-proj-tech">Node.js</span><span className="sr-proj-tech">TypeScript</span><span className="sr-proj-tech">.Net</span><span className="sr-proj-tech">GitHub Actions</span></div>
                         </div>
                         <div className="sr-proj-card">
                             <div className="sr-proj-card-icon">📊</div>
                             <h3>PowerBI Inforiver Project</h3>
-                            <p>Involved in Data visualization that brings scheduling, and data write-back capabilities directly from Power BI to customer defined destinations, eliminating the need for manual data movement and enables customer to access e-commerce site to subscribe the data and share those among their clients with ease.<br /><br />  Worked on the PoC Core concepts to evaluate the feature feasibility and compatibility in integrating those features to the project.</p>
+                            <p>Built data visualization and scheduling features that enable
+                                write-back capabilities directly from Power BI to customer-defined
+                                destinations — eliminating manual data movement across pipelines.
+
+                                Led PoC evaluation for feature feasibility and compatibility,
+                                accelerating integration decisions for the core product roadmap.</p>
                             <div className="sr-proj-card-stack"><span className="sr-proj-tech">Node.js</span><span className="sr-proj-tech">TypeScript</span><span className="sr-proj-tech">React.js</span><span className="sr-proj-tech">GitHub Actions</span></div>
                         </div>
                         <div className="sr-proj-card">
