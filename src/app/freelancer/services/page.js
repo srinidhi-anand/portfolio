@@ -35,7 +35,7 @@ export default function About() {
                                                 <h3>{item.title}</h3>
                                                 <p>{item.description}</p>
                                                 <div className="fl-service-tags">
-                                                    {(item.tags).map((key, i) => <span id={'tag' + i} className={'fl-service-tag'} > {key}</span>)
+                                                    {(item.tags).map((key, i) => <span key={'tag' + i} id={'tag' + i} className={'fl-service-tag'} > {key}</span>)
                                                     }
                                                 </div>
                                                 <div className="fl-service-price">{item.cta}</div>
