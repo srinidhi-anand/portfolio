@@ -139,7 +139,7 @@ export const skills = {
     },
     "AI / Computer Vision": {
         expert: ["OpenCV", "CNN Architecture"],
-        prof: ["TensorFlow", "Deep learn", "Emotion Detection (CV)"],
+        prof: ["TensorFlow", "Deep learning", "Emotion Detection (CV)"],
         learn: ["PyTorch", "LLM Integration"]
     },
     "Database": {
