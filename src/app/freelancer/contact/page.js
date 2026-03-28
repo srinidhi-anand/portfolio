@@ -165,25 +165,11 @@ export default function Contact() {
                                             {errors && errors.projectDetails && <p className="error">{errors.projectDetails}</p>}
                                         </div>
 
-                                        {/* <div className="fl-field form-input flex flex-col">
-                                            <label htmlFor="projectDetails" className="required">What are you building?</label>
-                                            <textarea placeholder="Provide the tech stack e.g Python, React.js" name="projectDetails" value={formData.projectDetails} onChange={(e) => handleInput(e)} required></textarea>
-                                            {errors && errors.projectDetails && <p className="error">{errors.projectDetails}</p>}
-                                        </div> */}
-
                                         <div className="fl-field form-input flex flex-col">
                                             <label htmlFor="message">Message</label>
                                             <textarea placeholder="Tell me about your project, timeline, and budget..." name="message" onChange={(e) => handleInput(e)} value={formData.message}></textarea>
                                         </div>
 
-                                        {/* <div className="w-35 items-center center justify-start">
-                                            <button className="px-10 mt-8 py-2 bg-[#130F49] text-gray-50 font-light rounded-md text-lg flex flex-row items-center send">
-                                                Send
-                                                <svg width="15" height="15" viewBox="0 0 8 6" className="text-cyan-500 ml-2 " fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="m0 0h8v6h-8zm.75 .75v4.5h6.5v-4.5zM0 0l4 3 4-3v1l-4 3-4-3z" fill="currentColor" />
-                                                </svg>
-                                            </button>
-                                        </div> */}
                                         <button className="fl-submit">Send Inquiry →</button>
                                         <p className="fl-response-note">Typically responds within 24 hours · Connect on <a href="#">LinkedIn</a></p>
                                     </form>

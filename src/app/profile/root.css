@@ -16,7 +16,6 @@ root {
   justify-content: space-between;
   padding: 0 48px;
   height: 64px;
-  /* position: sticky; */
   top: 56px;
   z-index: 100;
   backdrop-filter: blur(12px);
@@ -38,7 +37,7 @@ root {
   -webkit-mask-image: linear-gradient(black, black);
   color: transparent;
   mask-image: linear-gradient(black, black);
-  height: 50px; /* Adjust to fit your header height */
+  height: 50px;
   filter: contrast(1.5) brightness(1.2);
 }
 
@@ -84,7 +83,6 @@ root {
   justify-content: space-between;
   padding: 0 48px;
   height: auto;
-  /* position: sticky; */
   top: 56px;
   backdrop-filter: blur(12px);
 }

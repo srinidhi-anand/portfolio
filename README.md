@@ -1,24 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Srinidhi A. - Portfolio Website
+
+A dynamic, dual-path portfolio application built with Next.js and React. This portfolio showcases two distinct professional profiles:
+
+1. **Freelancer**: Focused on end-to-end web app, e-commerce, and mobile development.
+2. **Senior R&D**: Focused on research-driven engineering, systems architecture, computer vision, and deep learning.
+
+## Features
+
+- **Interactive Landing Page**: A split-path interactive design to choose between the Freelance and Senior R&D profiles.
+- **Freelance Profile (`/freelancer`)**: Highlights skills in Next.js, React, Node.js, and Python.
+- **Senior R&D Profile (`/profile`)**: Showcases expertise in OpenCV, Convolutional Neural Networks (CNN), TensorFlow, and AWS.
+- **Modern UI Styling**: Incorporates Tailwind CSS, Material UI (MUI), Bootstrap for a rich user experience.
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/) (v14.2)
+- **Library**: React 18
+- **Styling**: Tailwind CSS, Emotion, MUI, Bootstrap 5
+- **Icons**: React Icons, Material Icons, Bootstrap Icons
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies**:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. **Run the development server**:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Scripts & Deployment
+
+Available npm scripts:
+
+- `npm run dev`: Starts the local development server.
+- `npm run build`: Builds the application for production.
+- `npm run export`: Builds and exports a static version of the application.
+- `npm run deploy`: Custom script (`portfolio-feat -d build`) used for deployment.
 
 ## Learn More
 
@@ -26,11 +58,3 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -17,7 +17,6 @@ export default function About() {
             <div className="page-section" id="fl-about">
                 <section className="fl-about">
                     <div className="fl-section-label padding-28">Who I am</div>
-                    {/* <div className="fl-section-title">About Me</div> */}
                     <div className="fl-about-grid">
                         <div className="fl-avatar">SA</div>
                         <div className="fl-bio">

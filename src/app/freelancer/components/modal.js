@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 
 const ModalComponent = ({ src, onClose }) => {
     return (
@@ -19,7 +20,7 @@ const ModalComponent = ({ src, onClose }) => {
                 >
                     &times;
                 </button>
-                <img src={src} alt="Modal content" className="max-w-full rounded-lg object-contain max-h-[85vh] w-auto h-auto" />
+                <Image src={src} alt="Modal content" className="max-w-full rounded-lg object-contain max-h-[85vh] w-auto h-auto" />
             </div>
         </div >
     );

@@ -137,11 +137,7 @@ form {
   font-family: "DM Sans", sans-serif;
   outline: none;
 }
-/* .fl-field-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 14px;
-} */
+
 .fl-submit {
   width: 100%;
   background: var(--fl-accent);

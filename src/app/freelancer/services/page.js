@@ -23,7 +23,7 @@ export default function About() {
                 <section className="fl-services">
                     <div className="fl-services-inner">
                         <div className="fl-section-label">What I offer</div>
-                        {/* <div className="fl-section-title">Services</div> */}
+
                         <div className="fl-section-sub">Focused on 4 core areas — end-to-end ownership on every project</div>
                         <div className="fl-services-grid">
                             {
@@ -45,14 +45,6 @@ export default function About() {
                                 })
                             }
                         </div >
-                        {/* {skills.split(';').map((i, index) =>
-                            <div key={i} className="text-align">
-                                <span key={i + index} className="texteditor-inline flex flex-row">
-                                    <i className="bi bi-airplane-engines-fill icon"></i>
-                                    <div key={i + index + 1} className=" service texteditor-inline">{i.trim()}</div>
-                                </span>
-                            </div>
-                        )} */}
                     </div >
                 </section>
             </div>

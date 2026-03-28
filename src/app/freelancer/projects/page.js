@@ -36,7 +36,7 @@ export default function Projects() {
             <div className="page-section" id="fl-projects">
                 <section className="fl-projects">
                     <div className="fl-section-label fl-section-label-proj">Selected Work</div>
-                    {/* <div className="fl-section-title">Projects</div> */}
+
                     <div className="fl-section-sub fl-section-sub-proj">Case studies from freelance and enterprise engagements</div>
 
 
@@ -72,7 +72,7 @@ export default function Projects() {
                                 </div>)}
                             </>
                         ))}
-                        {/* </div> */}
+
 
                     </div>
                 </section >
