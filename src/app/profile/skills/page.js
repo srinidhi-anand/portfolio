@@ -26,14 +26,14 @@ export default function Skills() {
                                 <div className="sr-skill-item"><span className="sr-skill-name">Python (FastAPI)</span><div className="sr-skill-bar"><div className="sr-skill-fill w-[92%]" ></div></div></div>
                                 <div className="sr-skill-item"><span className="sr-skill-name">Node.js</span><div className="sr-skill-bar"><div className="sr-skill-fill w-[90%]" ></div></div></div>
                                 <div className="sr-skill-item"><span className="sr-skill-name">Django / Flask</span><div className="sr-skill-bar"><div className="sr-skill-fill w-[85%]" ></div></div></div>
-                                <div className="sr-skill-item"><span className="sr-skill-name">PostgreSQL</span><div className="sr-skill-bar"><div className="sr-skill-fill w-[82%]" ></div></div></div>
+                                <div className="sr-skill-item"><span className="sr-skill-name">Fastify</span><div className="sr-skill-bar"><div className="sr-skill-fill w-[42%]" ></div></div></div>
                             </div>
                             <div className="sr-skill-card">
                                 <h4>AI / Computer Vision</h4>
                                 <div className="sr-skill-item"><span className="sr-skill-name">OpenCV</span><div className="sr-skill-bar"><div className="sr-skill-fill  w-[80%]"></div></div></div>
                                 <div className="sr-skill-item"><span className="sr-skill-name">CNN Architecture</span><div className="sr-skill-bar"><div className="sr-skill-fill  w-[72%]" ></div></div></div>
                                 <div className="sr-skill-item"><span className="sr-skill-name">TensorFlow</span><div className="sr-skill-bar"><div className="sr-skill-fill  w-[65%]" ></div></div></div>
-                                <div className="sr-skill-item"><span className="sr-skill-name">PyTorch</span><div className="sr-skill-bar"><div className="sr-skill-fill  w-[45%]" ></div></div></div>
+                                <div className="sr-skill-item"><span className="sr-skill-name">Deep Learning</span><div className="sr-skill-bar"><div className="sr-skill-fill  w-[45%]" ></div></div></div>
                             </div>
                             <div className="sr-skill-card">
                                 <h4>Cloud &amp; DevOps</h4>
