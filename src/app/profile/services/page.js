@@ -42,19 +42,6 @@ export default function Service() {
                             </ul>
                             <div className="sr-exp-tags"><span className="sr-exp-tag">SAP CPQ</span><span className="sr-exp-tag">Knockout.js</span><span className="sr-exp-tag">Python</span><span className="sr-exp-tag">SQL</span><span className="sr-exp-tag">SalesForce</span></div>
                         </div>
-                        <div className="sr-exp-item">
-                            <div className="sr-exp-dot"></div>
-                            <div className="sr-exp-header">
-                                <div className="sr-exp-role">Full-Stack Developer — Fintech &amp; Mobile</div>
-                                <div className="sr-exp-company">Freelance &amp; Agency Projects</div>
-                            </div>
-                            <ul className="sr-exp-bullets">
-                                <li>Built Digital Cash — multilingual fintech mobile app (Arabic/English) for bill payments and e-invoicing, deployed on AWS with MongoDB backend</li>
-                                <li>Developed Breath Analyser app using Python Kivy with Google Fit API and Google Cloud integration for real-time sleep motion analysis</li>
-                                <li>Delivered cross-platform apps (iOS, Android, Web) for 3 freelance clients across fintech and health domains</li>
-                            </ul>
-                            <div className="sr-exp-tags"><span className="sr-exp-tag">Ionic</span><span className="sr-exp-tag">Angular</span><span className="sr-exp-tag">Python (Kivy)</span><span className="sr-exp-tag">MongoDB</span><span className="sr-exp-tag">Google Cloud</span><span className="sr-exp-tag">AWS</span></div>
-                        </div>
                     </div>
                 </section>
                 <Footer />

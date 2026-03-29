@@ -1,4 +1,3 @@
-// app/ToastProvider.tsx (create a new client component file)
 'use client';
 
 import { ToastContainer } from 'react-toastify';
@@ -18,7 +17,7 @@ export default function ToastProvider({ children }) {
                 pauseOnHover
                 theme="dark"
                 position="top-right"
-                autoClose={500000}
+                autoClose={5000}
             />
         </>
     );

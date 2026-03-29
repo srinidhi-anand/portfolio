@@ -10,6 +10,7 @@ import BackToTop from "../components/backtotop";
 import React, { useState, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import "./contact.css";
+import { toast } from 'react-toastify';
 
 export default function Contact() {
     const router = useRouter();
@@ -25,6 +26,11 @@ export default function Contact() {
     const [formSuccess, setFormSuccess] = useState(false);
     const [isFormValid, setIsFormValid] = useState(false);
     const [errors, setErrors] = useState({});
+
+    const notify = () => toast.success("Message sent successfully", {
+        position: "top-right",
+        hideProgressBar: true,
+    });
 
     const validateForm = (formData) => {
         let errors = {};
@@ -105,6 +111,7 @@ export default function Contact() {
             });
             if (response.status === 200) {
                 setFormSuccess(response.status);
+                notify()
             }
             else {
                 setFormSuccess(false);
@@ -125,7 +132,6 @@ export default function Contact() {
             {formSuccess ?
                 <><div className="center contact-form texteditor-contact">Submitted. Thanks for Reaching Out! </div><div className="center contact-form texteditor-contact"> <button className="center contact-form texteditor-contact primary" onClick={resetForm}> Submit Another Request</button></div></>
                 : (
-                    // <div className="center project-module-form project-module module form texteditor-contact w-full">
                     <div className="page-section-fl" id="fl-contact">
                         <section className="fl-contact">
                             <div className="fl-section-label">Get in touch</div>
@@ -171,13 +177,12 @@ export default function Contact() {
                                         </div>
 
                                         <button className="fl-submit">Send Inquiry →</button>
-                                        <p className="fl-response-note">Typically responds within 24 hours · Connect on <a href="#">LinkedIn</a></p>
+                                        <p className="fl-response-note">Typically responds within 24 hours · Connect on <a href="https://www.linkedin.com/in/srianand27" target="_blank" rel="noopener noreferrer" >LinkedIn</a></p>
                                     </form>
                                 </div>
                             </div>
                         </section>
                     </div>
-                    // </div>
                 )}
             <BackToTop />
             <Footer />
