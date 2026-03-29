@@ -6,6 +6,13 @@ export const works = {
     extension: ["png", "png"],
     image_count: 2,
   },
+  "helper-utils-ts": {
+    stack: "Node.js + NPM + Typescript",
+    text: "Lightweight TypeScript utility library. Clean null, undefined and empty value checks for TypeScript. Handles real-world edge cases like `null` strings from APIs.",
+    url: "npm_",
+    extension: ["png", "png"],
+    image_count: 2,
+  },
   "PowerBI Project": {
     stack: "PowerBI + Node.js + Typescript + MsSQL + React JS + Docker",
     text: "Worked on the visual interpretation based on the client data using the Microsoft visualization tool, Power BI. Involved mainly in handling subscriptions of the reports and datasets available for interpretation.Integration is handled using rest API calls to access the datasets.Worked on the cloud Services Integration to handle the database storage.",
@@ -55,7 +62,7 @@ export const works = {
     image_count: 1,
   },
 
-  Biotek: {
+  BioTek: {
     stack: "SAP ABAP + MsSQL + Node.js + REST API",
     text: "Involved in the generation of quotes related to Agilent products & services via integration with SFDC and CPQ.Worked on the pricing routines handling and code conversion from ABAP to Python.Worked on the Rest API calls from Python to calculate the pricing for the quote.",
     url: "bio_",

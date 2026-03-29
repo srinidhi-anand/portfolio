@@ -16,8 +16,8 @@ export default function Project() {
 
                     {/* <!-- Featured: Emotion Detection --> */}
                     <div className="sr-proj-featured">
-                        <span className="sr-feat-badge">R&amp;D FLAGSHIP PROJECT</span>
-                        <h3>Emotion Detection System — Computer Vision &amp; Deep Learning</h3>
+                        <span className="sr-feat-badge">R & D FLAGSHIP PROJECT</span>
+                        <h3>Emotion Detection System — Computer Vision & Deep Learning</h3>
                         <p>Designed and trained a Convolutional Neural Network (CNN) for real-time facial emotion recognition using OpenCV. Built during M.E. Applied Electronics research. Classified 7 emotion categories from live video input with frame-by-frame inference pipeline.</p>
                         <div className="sr-proj-meta">
                             <div className="sr-proj-meta-item"><span>Architecture</span><strong>CNN · OpenCV Pipeline</strong></div>
@@ -60,6 +60,12 @@ export default function Project() {
                             <div className="sr-proj-card-stack"><span className="sr-proj-tech">Node.js</span><span className="sr-proj-tech">TypeScript</span><span className="sr-proj-tech">LLM APIs</span><span className="sr-proj-tech">GitHub Actions</span></div>
                         </div>
                         <div className="sr-proj-card">
+                            <div className="sr-proj-card-icon">🧪</div>
+                            <h3>helper-utils-ts</h3>
+                            <p>Published npm package — Lightweight TypeScript utility library. Clean null, undefined and empty value checks for TypeScript. Handles real-world edge cases like "null" strings from APIs.</p>
+                            <div className="sr-proj-card-stack"><span className="sr-proj-tech">Node.js</span><span className="sr-proj-tech">TypeScript</span><span className="sr-proj-tech">Zero-dep</span><span className="sr-proj-tech">Utilities</span></div>
+                        </div>
+                        <div className="sr-proj-card">
                             <div className="sr-proj-card-icon">💳</div>
                             <h3>Digital Cash — Fintech Platform</h3>
                             <p>Multilingual (Arabic/English) fintech app for bill payments and e-invoicing. Full-stack delivery across iOS, Android, and Web with AWS backend and MongoDB.</p>
@@ -67,7 +73,7 @@ export default function Project() {
                         </div>
                         <div className="sr-proj-card">
                             <div className="sr-proj-card-icon">📱</div>
-                            <h3>Breath &amp; Motion Analyser</h3>
+                            <h3>Breath & Motion Analyser</h3>
                             <p>Health monitoring app using Python Kivy + Google Fit API. Real-time sleep motion detection with dial clock UI and Google Cloud telemetry integration.</p>
                             <div className="sr-proj-card-stack"><span className="sr-proj-tech">Python (Kivy)</span><span className="sr-proj-tech">Google Fit API</span><span className="sr-proj-tech">GCP</span><span className="sr-proj-tech">REST API</span></div>
                         </div>
