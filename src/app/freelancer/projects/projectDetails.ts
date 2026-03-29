@@ -13,16 +13,19 @@ export const projects = {
 export const ProjectCards = {
   "Intelligent Testing Framework": {
     icon: "🤖",
-    badge: "⭐ Featured npm · zero-dep",
+    badge: "⭐ Featured . Published",
     npm: "https://www.npmjs.com/package/ts-genai-test",
+    yarn: "https://classic.yarnpkg.com/en/package/ts-genai-test",
+    GitHub: "https://github.com/srinidhi-anand/testcase-gen-ai-ts",
     description:
       "AI-powered Jest test generator with multi-LLM support and CI/CD pipeline. Supports Gemini, OpenAI & Groq.",
     outcome: "📈 Reduces test writing time ~70%",
   },
   "helper-utils-ts": {
     icon: "🤖",
-    badge: "⭐ Featured npm · zero-dep",
+    badge: "⭐ Featured . Published",
     npm: "https://www.npmjs.com/package/helper-utils-ts",
+    GitHub: "https://github.com/srinidhi-anand/helper-ts",
     description: "Lightweight TypeScript utility library. ",
     outcome: "📈 Zero dependencies · TypeScript-native · MIT",
   },

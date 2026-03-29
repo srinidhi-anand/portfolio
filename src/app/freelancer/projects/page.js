@@ -41,36 +41,62 @@ export default function Projects() {
                     <div className="fl-section-sub fl-section-sub-proj">Case studies from freelance and enterprise engagements</div>
 
 
-                    <div className='gallery'>
+                    <div className='gallery grid grid-cols-1 md:grid-cols-2 gap-8 p-4'>
                         {media_urls.map((media) => (
 
                             <React.Fragment key={media.id}>
-                                <div key={media.id} className="img__wrap">
+                                <div className='flex flex-row items-start gap-4 border p-4 rounded-xl'>
+                                    <div key={media.id} className="img__wrap w-32 h-32 rounded-lg object-cover flex-shrink-0">
 
-                                    <Image key={`img_${media.id + 1}`} width='257' height='200' src={media.url} className="img__img" alt={media.title}
-                                        style={{ objectFit: "contain" }} />
-                                    <i className="arrow-icon fa-regular fa-circle-right"></i>
+                                        <Image key={`img_${media.id + 1}`} width='257' height='200' src={media.url} className="img__img" alt={media.title}
+                                            style={{ objectFit: "contain" }} />
+                                        <i className="arrow-icon fa-regular fa-circle-right"></i>
 
-                                    <Link
-                                        key={`link_${media.id + 1}`}
-                                        href={{
-                                            pathname: `/freelancer/projects/details`,
-                                            query: { name: media.title, id: media.id },
-                                        }}
-                                        className={`img__img link ${pathname === `/freelancer/projects/details` ? 'active' : ''}`}
-                                    >
-                                        <div key={`desc_${media.id + 1}`} className="img__description_layer">
-                                            <p key={`title_${media.id + 1}`} className="img__description">{media.title}</p>
-                                        </div>
-                                    </Link>
+                                        <Link
+                                            key={`link_${media.id + 1}`}
+                                            href={{
+                                                pathname: `/freelancer/projects/details`,
+                                                query: { name: media.title, id: media.id },
+                                            }}
+                                            className={`img__img link ${pathname === `/freelancer/projects/details` ? 'active' : ''}`}
+                                        >
+                                            <div key={`desc_${media.id + 1}`} className="img__description_layer">
+                                                <p key={`title_${media.id + 1}`} className="img__description">{media.title}</p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                    {
+                                        ProjectCards[media.title] && (
+                                            <div key={'card-' + media.id} className="flex flex-col gap-2 fl-proj-body">
+                                                {ProjectCards[media.title].badge && <span className="fl-proj-badge">{ProjectCards[media.title].badge}</span>}
+                                                {(ProjectCards[media.title].name || media.title) && <h3>{ProjectCards[media.title].name || media.title}</h3>}
+                                                <p>{ProjectCards[media.title].description}</p>
+                                                {
+                                                    ProjectCards[media.title].npm && <div className="proj-links">
+                                                        <a href={ProjectCards[media.title].npm}
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            className="proj-link-npm">
+                                                            Npm ↗
+                                                        </a>
+                                                        {
+                                                            ProjectCards[media.title].yarn && <a href={ProjectCards[media.title].yarn}
+                                                                target="_blank" rel="noopener noreferrer"
+                                                                className="proj-link-npm">
+                                                                Yarn ↗
+                                                            </a>
+                                                        }
+                                                        <a href={ProjectCards[media.title].GitHub}
+                                                            target="_blank" rel="noopener noreferrer"
+                                                            className="proj-link-gh">
+                                                            GitHub ↗
+                                                        </a>
+                                                    </div>
+                                                }
+                                                <span className="fl-proj-outcome">{ProjectCards[media.title].outcome}</span>
+                                            </div>
+                                        )
+                                    }
                                 </div>
-
-                                {ProjectCards[media.title] && (<div key={'card-' + media.id} className="fl-proj-body">
-                                    {ProjectCards[media.title].badge && <span className="fl-proj-badge">{ProjectCards[media.title].badge}</span>}
-                                    {(ProjectCards[media.title].name || media.title) && <h3>{ProjectCards[media.title].name || media.title}</h3>}
-                                    <p>{ProjectCards[media.title].description}</p>
-                                    <span className="fl-proj-outcome">{ProjectCards[media.title].outcome}</span>
-                                </div>)}
                             </React.Fragment>
                         ))}
 

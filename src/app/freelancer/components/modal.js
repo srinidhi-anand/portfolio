@@ -20,7 +20,14 @@ const ModalComponent = ({ src, onClose }) => {
                 >
                     &times;
                 </button>
-                <Image src={src} alt="Modal content" className="max-w-full rounded-lg object-contain max-h-[85vh] w-auto h-auto" />
+                <Image
+                    width={0}
+                    height={0}
+                    src={src}
+                    sizes="100vw"
+                    alt="Modal content"
+                    className="max-w-full rounded-lg object-contain max-h-[85vh] w-auto h-auto"
+                />
             </div>
         </div >
     );

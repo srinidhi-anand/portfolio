@@ -56,13 +56,48 @@ export default function Project() {
                         <div className="sr-proj-card">
                             <div className="sr-proj-card-icon">🧪</div>
                             <h3>Intelligent Testing Framework</h3>
-                            <p>Published npm package — AI-powered Jest test case generator with multi-LLM providers (Gemini, OpenAI, Groq). Retry logic, CI/CD via GitHub Actions. Reduces manual test writing by ~70%.</p>
+                            <div className="proj-links">
+                                <a href="https://www.npmjs.com/package/ts-genai-test"
+                                    target="_blank" rel="noopener noreferrer"
+                                    className="proj-link-npm">
+                                    Npm ↗
+                                </a>
+                                <a href="https://classic.yarnpkg.com/en/package/ts-genai-test"
+                                    target="_blank" rel="noopener noreferrer"
+                                    className="proj-link-npm">
+                                    Yarn ↗
+                                </a>
+                                <a href="https://github.com/srinidhi-anand/testcase-gen-ai-ts"
+                                    target="_blank" rel="noopener noreferrer"
+                                    className="proj-link-gh">
+                                    GitHub ↗
+                                </a>
+                            </div>
+                            <p>AI-powered Jest test case generator with multi-LLM providers (Gemini, OpenAI, Groq). Retry logic, CI/CD via GitHub Actions. Reduces manual test writing by ~70%.</p>
                             <div className="sr-proj-card-stack"><span className="sr-proj-tech">Node.js</span><span className="sr-proj-tech">TypeScript</span><span className="sr-proj-tech">LLM APIs</span><span className="sr-proj-tech">GitHub Actions</span></div>
                         </div>
                         <div className="sr-proj-card">
                             <div className="sr-proj-card-icon">🧪</div>
                             <h3>helper-utils-ts</h3>
-                            <p>Published npm package — Lightweight TypeScript utility library. Clean null, undefined and empty value checks for TypeScript. Handles real-world edge cases like "null" strings from APIs.</p>
+                            <div className="proj-links">
+                                <a href="https://www.npmjs.com/package/helper-utils-ts"
+                                    target="_blank" rel="noopener noreferrer"
+                                    className="proj-link-npm">
+                                    Npm ↗
+                                </a>
+                                <a href="https://github.com/srinidhi-anand/helper-ts"
+                                    target="_blank" rel="noopener noreferrer"
+                                    className="proj-link-gh">
+                                    GitHub ↗
+                                </a>
+                            </div>
+                            {/* <p className="pkg-subtitle">
+                                📦 <a href="https://www.npmjs.com/package/helper-utils-ts"
+                                    target="_blank" rel="noopener noreferrer">
+                                    helper-utils-ts
+                                </a> · Published on npm
+                            </p> */}
+                            <p>Lightweight TypeScript utility library. Clean null, undefined and empty value checks for TypeScript. Handles real-world edge cases like "null" strings from APIs.</p>
                             <div className="sr-proj-card-stack"><span className="sr-proj-tech">Node.js</span><span className="sr-proj-tech">TypeScript</span><span className="sr-proj-tech">Zero-dep</span><span className="sr-proj-tech">Utilities</span></div>
                         </div>
                         <div className="sr-proj-card">
