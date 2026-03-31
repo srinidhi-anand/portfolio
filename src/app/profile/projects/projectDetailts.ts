@@ -1,0 +1,106 @@
+export const projectCards = {
+  EDS: {
+    isFeatured: true,
+    name: "Emotion Detection System — Computer Vision & Deep Learning",
+    badge: "R & D FLAGSHIP PROJECT",
+    desc: "Designed and trained a Convolutional Neural Network (CNN) for real-time facial emotion recognition using OpenCV. Built during M.E. Applied Electronics research. Classified 7 emotion categories from live video input with frame-by-frame inference pipeline. Proposed model achieved 96% accuracy on FER-2013 dataset.",
+    meta: [
+      {
+        normal: "Architecture",
+        strong: "CNN · OpenCV Pipeline",
+      },
+      {
+        normal: "Categories",
+        strong: "7 emotion classes",
+      },
+      {
+        normal: "Accuracy",
+        strong: "96% approx.",
+      },
+      {
+        normal: "Domain",
+        strong: "Computer Vision · DL",
+      },
+    ],
+    stack: [
+      "Python",
+      "OpenCV",
+      "TensorFlow",
+      "CNN",
+      "NumPy",
+      "ML Models",
+      "Deep Learning",
+    ],
+  },
+  "1P": {
+    isFeatured: false,
+    name: "Fabric 1P Project",
+    icon: "🧩",
+    desc: "Collaborated with Microsoft to bring no-code planning, budgeting, and forecasting capabilities directly into Microsoft Fabric and Power BI semantic models — eliminating data movement and siloed planning workflows. Architected the data storage layer using OneLake with high-security connectivity, ensuring enterprise-grade reliability and scalability.",
+    stack: ["Node.js", ".NET", "TypeScript", "React.js"],
+  },
+  IR: {
+    isFeatured: false,
+    name: "PowerBI Inforiver Project",
+    icon: "📊",
+    desc: "Built data visualization and scheduling features that enablewrite-back capabilities directly from Power BI to customer-defined destinations — eliminating manual data movement across pipelines. Led PoC evaluation for feature feasibility and compatibility, accelerating integration decisions for the core product roadmap.",
+    stack: ["Node.js", "Docker", "TypeScript", "React.js"],
+  },
+  ITEST: {
+    isFeatured: false,
+    name: "Intelligent Testing Framework",
+    icon: "📦",
+    desc: "AI-powered Jest test case generator with multi-LLM providers (Gemini, OpenAI, Groq). Retry logic, CI/CD via GitHub Actions. Reduces manual test writing by ~70%.",
+    stack: ["Node.js", "Gen-AI", "TypeScript", "Jest", "LLM", "AI Models"],
+    isPublished: true,
+    links: {
+      Npm: "https://www.npmjs.com/package/ts-genai-test",
+      GitHub: "https://github.com/srinidhi-anand/testcase-gen-ai-ts",
+      Yarn: "https://classic.yarnpkg.com/en/package/ts-genai-test",
+      "Dev.to":
+        "https://dev.to/srinidhianand/building-an-ai-powered-jest-test-case-generator-for-typescript-251m",
+      LinkedIn:
+        "https://www.linkedin.com/posts/srianand27_in-my-latest-devtohttpslnkdingdqfyvp8-ugcPost-7413884754636234752-2Vn6?utm_source=share&utm_medium=member_desktop&rcm=ACoAABl_Dv0B_8m3NQncUC1VifxsMvjeCDTVEbg",
+    },
+  },
+  Utils: {
+    isFeatured: false,
+    name: "helper-utils-ts",
+    icon: "📦",
+    desc: `Lightweight TypeScript utility library. Clean null, undefined and empty value checks for TypeScript. Handles real-world edge cases like "null" strings from APIs.`,
+    stack: ["Node.js", "Utilities", "TypeScript", "Validation", "Zero.dep"],
+    isPublished: true,
+    links: {
+      Npm: "https://www.npmjs.com/package/helper-utils-ts",
+      GitHub: "https://github.com/srinidhi-anand/helper-ts",
+      "Dev.to":
+        "https://dev.to/srinidhianand/announcing-helper-utils-ts-a-lightweight-utility-library-for-clean-value-checks-5e7f",
+      LinkedIn:
+        "https://www.linkedin.com/posts/srianand27_nodejs-typescript-helperutils-share-7392874893819899904-mwl3?utm_source=share&utm_medium=member_desktop&rcm=ACoAABl_Dv0B_8m3NQncUC1VifxsMvjeCDTVEbg",
+    },
+  },
+  Fintech: {
+    isFeatured: false,
+    name: "Digital Cash — Fintech Platform",
+    icon: "💳",
+    desc: `Multilingual (Arabic/English) fintech app for bill payments and e-invoicing. Full-stack delivery across iOS, Android, and Web with AWS backend and MongoDB.`,
+    stack: ["Node.js", "Angular", "TypeScript", "Ionic", "AWS", "MongoDB"],
+    isPublished: false,
+  },
+  BMA: {
+    isFeatured: false,
+    name: "Breath & Motion Analyser",
+    icon: "📱",
+    desc: `Health monitoring app using Python Kivy + Google Fit API. Real-time sleep motion detection with dial clock UI and Google Cloud telemetry integration.`,
+    stack: ["Google Fit API", "Python(Kivy)", "GCP", "Rest API"],
+    isPublished: false,
+  },
+  CPQ: {
+    isFeatured: false,
+    name: "SAP CPQ System — OCTanner",
+    icon: "📱",
+    desc: `Enterprise CPQ with custom Pricebook Sets, Exchange Rate modules and SalesForce object integration. 40% SQL query optimisation via Python profiling.`,
+    stack: ["MSSQL", "Python", "SAP CPQ", "Knockout.js"],
+    isPublished: false,
+  },
+};

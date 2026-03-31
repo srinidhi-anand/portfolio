@@ -4,6 +4,7 @@ import './home.css';
 import Nav from './components/navbar';
 import { useRouter } from "next/navigation";
 import Footer from './components/footer';
+import NeuralBackground from './components/neuralBackground';
 
 export default function Profile() {
 
@@ -22,6 +23,7 @@ export default function Profile() {
         <>
             <Nav />
             <div className="page-section visible" id="sr-home">
+                <NeuralBackground />
                 <section className="sr-hero">
                     <div className="sr-role-badge">Senior Full-Stack Engineer &nbsp;·&nbsp; <span>R&amp;D Focus</span></div>
                     <h1>Architect. Build. <em>Research.</em><br />Where systems meet intelligence.</h1>

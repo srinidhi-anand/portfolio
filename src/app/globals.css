@@ -95,7 +95,6 @@ div.loader-logo img {
   justify-content: space-between;
   padding: 0 48px;
   height: 64px;
-  /* position: sticky; */
   top: 56px;
   z-index: 100;
 }
@@ -246,7 +245,6 @@ sr-wrap {
   justify-content: space-between;
   padding: 0 48px;
   height: 64px;
-  /* position: sticky; */
   top: 56px;
   z-index: 100;
   backdrop-filter: blur(12px);
