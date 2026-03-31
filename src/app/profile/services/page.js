@@ -22,7 +22,7 @@ export default function Service() {
                                 <div className="sr-exp-date">2022 — Present · 3+ years</div>
                             </div>
                             <ul className="sr-exp-bullets">
-                                <li>Architected and delivered Intelligent Testing Framework — AI-powered Jest generator with multi-LLM support (Gemini, OpenAI, Groq) and automated GitHub Actions CI/CD pipeline</li>
+                                <li>Architected high-availability microservices and scalable distributed systems using Node.js, React, Power BI, and AWS/Azure, improving deployment reliability by 80% while aligning solutions with product and business goals</li>
                                 <li> Enhanced performance and availability through Docker/Kubernetes, Redis caching, optimized data pipelines, and reliable backend design patterns for high-traffic workloads</li>
                                 <li>Translated functional requirements into technical specifications, API contracts, and integration workflows, enabling consistent delivery across cross-functional teams</li>
                                 <li>Designed system architecture for full-stack products including authentication, microservices, database design and cloud deployment strategy</li>
