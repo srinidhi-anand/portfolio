@@ -58,7 +58,7 @@ export default function Project() {
                                         </div>}
                                     <p>{v.desc}</p>
                                     <div className="sr-proj-card-stack">
-                                        {v.stack.map((item, i) => (<span key={i + item} className="sr-proj-tech">Node.js</span>))}
+                                        {v.stack.map((item, i) => (<span key={i + item} className="sr-proj-tech">{item}</span>))}
                                     </div>
                                 </div>)
                             })

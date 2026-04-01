@@ -33,7 +33,7 @@ export const ProjectCards = {
     icon: "💳",
     badge: "⭐ Featured",
     description:
-      "Data Visualization using Ms Tool called PowerBI and Fabric to integrate Planning, Intelligence views for millions of data for worldwide customers",
+      "Data Visualization using MS Tool called PowerBI and Fabric to integrate Planning, Intelligence views for millions of data for worldwide customers",
     outcome: "📈 Reduces data handling complexities by 65%",
   },
   "E-Invoice Single Page": {
@@ -57,7 +57,7 @@ export const ProjectCards = {
     description:
       "Breath movement analysis based on sleeping activity with Google Fit API",
     outcome:
-      "Health based monitoring and breath analysis app in health care industry",
+      "An app to track sleep of humans and their breath analysis to be used in health care industry",
   },
   Monarch: {
     icon: "📊",
