@@ -45,15 +45,16 @@ export default function Project() {
                                     </span>}
                                     <div className="sr-proj-card-icon" key={v.name + (index + 1)}>{v.icon}</div>
                                     <h3>{v.name}</h3>
-                                    {v.links &&
+
+                                    {v.links && v.isPublished &&
                                         <div className="proj-links">
-                                            {Object.entries(v.links).map(([k, v], i) => {
-                                                <a href={v[k]}
+                                            {Object.entries(v.links).map(([key, val], i) => (
+                                                <a href={val} key={i}
                                                     target="_blank" rel="noopener noreferrer"
-                                                    className={`proj-link-${k === 'GitHub' || k === 'LinkedIn' ? 'gh' : 'npm'}`}>
-                                                    {k} ↗
+                                                    className={`proj-link-${key === 'GitHub' || key === 'LinkedIn' ? 'gh' : 'npm'}`}>
+                                                    {key} ↗
                                                 </a>
-                                            })}
+                                            ))}
                                         </div>}
                                     <p>{v.desc}</p>
                                     <div className="sr-proj-card-stack">
